@@ -1,7 +1,46 @@
+body {
+  font-family: 'Mulish', sans-serif;
+  color: #FFFFFF;
+}
 .header {
   position: absolute;
 width: 100%;
 height: 120px;
 left: 0px;
 top: 0px;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  max-width: 1110px;
+  margin: auto; /* посередине шапки */
+  display: flex;
+  justify-content: space-between;
+}
+.horizontal-logo {
+  padding-top: 51px;
+}
+.nav {
+  padding: 31px 0 31px 0;
+  background: #0A223D;
+}
+.nav__menu {
+  max-width: 1110px;
+   margin: auto; /* посередине шапки */
+ display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav__item {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 8px;
+  list-style: none;
+  text-transform: uppercase;
+}
+.nav__item:hover {
+  text-decoration: underline;
 }
