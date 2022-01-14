@@ -1,13 +1,15 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: 'Mulish', sans-serif;
-  color: #FFFFFF;
+  font-family: "Mulish", sans-serif;
+  color: #ffffff;
 }
 .header {
   position: absolute;
-width: 100%;
-height: 120px;
-left: 0px;
-top: 0px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
 }
 .header__content {
   display: flex;
@@ -15,21 +17,69 @@ top: 0px;
 }
 .top {
   max-width: 1110px;
+  height: 120px;
   margin: auto; /* посередине шапки */
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .horizontal-logo {
   padding-top: 51px;
+  padding-bottom: 46px;
+  margin-right: 108px;
+}
+.search-bar {
+  position: relative;
+  margin-right: 368px;
+}
+.search-bar__find-bar {
+  width: 350px;
+  height: 40px;
+  border: 1px solid #f5fafe;
+  background: #f5fafe;
+  border-radius: 6px;
+}
+.search-bar__find-button {
+  width: 65px;
+  height: 40px;
+  border: 1px solid #ec1f46;
+  background: #ec1f46;
+  border-radius: 0px 6px 6px 0px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.search-bar__find-button:hover {
+  cursor: pointer;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+.user-profile__name {
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+.user-profile__avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; /* изображение обрезается под размер 40х40 */
+  border-radius: 50%;
+  margin-right: 18px;
+}
+.user-profile__avatar:hover {
+  cursor: pointer;
 }
 .nav {
   padding: 31px 0 31px 0;
-  background: #0A223D;
+  background: #0a223d;
 }
 .nav__menu {
   max-width: 1110px;
-   margin: auto; /* посередине шапки */
- display: flex;
+  margin: auto; /* посередине шапки */
+  padding: 0;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -37,7 +87,8 @@ top: 0px;
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
-  margin: 0 8px;
+  margin: 0;
+
   list-style: none;
   text-transform: uppercase;
 }
