@@ -3,11 +3,15 @@
 body 
 	font-family: "Mulish", sans-serif 
 	color: #ffffff 
-.full-width 
-  max-width: 1110px 
+a
+	text-decoration: none
+	color: #ffffff 
+
+.boundaries 
+	max-width: 1110px
 	margin: auto 
-  display: flex
-  justify-content: space-between
+	display: flex
+	justify-content: space-between
 .header 
 	position: absolute 
 	width: 100% 
@@ -46,6 +50,8 @@ body
 .user-profile 
 	display: flex 
 	align-items: center 
+	&:hover
+		cursor: pointer
 .user-profile__name 
 	font-size: 14px 
 	line-height: 18px 
@@ -56,8 +62,6 @@ body
 	object-fit: cover 
 	border-radius: 50% 
 	margin-right: 18px 
-	&:hover 
-		cursor: pointer 
 .nav 
 	padding: 31px 0 31px 0 
 	background: #0a223d 
@@ -67,9 +71,10 @@ body
 .nav__item 
 	font-size: 14px 
 	font-weight: 700 
-	text-decoration: none 
 	margin: 0 
 	list-style: none 
 	text-transform: uppercase 
 	&:hover 
 		text-decoration: underline 
+.nav-ref
+	color: #ffffff 

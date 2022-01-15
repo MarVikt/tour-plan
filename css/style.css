@@ -8,6 +8,22 @@ body {
   color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.boundaries {
+  max-width: 1110px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -26,18 +42,10 @@ body {
 }
 
 .top {
-  max-width: 1110px;
   height: 120px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .horizontal-logo {
@@ -83,6 +91,10 @@ body {
           align-items: center;
 }
 
+.user-profile:hover {
+  cursor: pointer;
+}
+
 .user-profile__name {
   font-size: 14px;
   line-height: 18px;
@@ -98,35 +110,22 @@ body {
   margin-right: 18px;
 }
 
-.user-profile__avatar:hover {
-  cursor: pointer;
-}
-
 .nav {
   padding: 31px 0 31px 0;
   background: #0a223d;
 }
 
 .nav__menu {
-  max-width: 1110px;
-  margin: auto;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .nav__item {
   font-size: 14px;
   font-weight: 700;
-  text-decoration: none;
   margin: 0;
   list-style: none;
   text-transform: uppercase;
@@ -134,5 +133,9 @@ body {
 
 .nav__item:hover {
   text-decoration: underline;
+}
+
+.nav-ref {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
