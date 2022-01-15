@@ -15,19 +15,21 @@
 	margin-right: 108px 
 .search-bar 
 	position: relative 
-	margin-right: 368px 
+	margin-right: 368px
+	border-radius: 6px
+	overflow: hidden // скрыли уголки по контуру закругления
 	&__find-bar 
 		width: 350px 
 		height: 40px 
-		border: 1px solid $color-background-light 
+		padding-left: 23px
+		padding-right: 75px
 		background: $color-background-light 
-		border-radius: 6px 
+		border: none
 	&__find-button 
 		width: 65px 
 		height: 40px 
 		border: 1px solid $color-button 
 		background: $color-button 
-		border-radius: 0px 6px 6px 0px 
 		position: absolute 
 		right: 0 
 		top: 0 
@@ -50,7 +52,7 @@
 		margin-right: 18px 
 .nav 
 	padding: 31px 0 31px 0 
-	background: #0a223d
+	background: $color-background-dark
 	&__menu 
     padding: 0 
     flex-direction: row
@@ -63,4 +65,4 @@
 		&:hover
 			text-decoration: underline 
   &-ref
-    color: $color-text-white 
+    color: $color-text-light 

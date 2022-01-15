@@ -400,14 +400,17 @@ a {
 .search-bar {
   position: relative;
   margin-right: 368px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .search-bar__find-bar {
   width: 350px;
   height: 40px;
-  border: 1px solid #f5fafe;
+  padding-left: 23px;
+  padding-right: 75px;
   background: #f5fafe;
-  border-radius: 6px;
+  border: none;
 }
 
 .search-bar__find-button {
@@ -415,7 +418,6 @@ a {
   height: 40px;
   border: 1px solid #ec1f46;
   background: #ec1f46;
-  border-radius: 0px 6px 6px 0px;
   position: absolute;
   right: 0;
   top: 0;
