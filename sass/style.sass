@@ -1,80 +1,12 @@
-* 
-	box-sizing: border-box 
-body 
-	font-family: "Mulish", sans-serif 
-	color: #ffffff 
-a
-	text-decoration: none
-	color: #ffffff 
+// подключение базовых натроек 
+@import 'sass/_settings'
 
-.boundaries 
-	max-width: 1110px
-	margin: auto 
-	display: flex
-	justify-content: space-between
-.header 
-	position: absolute 
-	width: 100% 
-	left: 0px 
-	top: 0px 
-.header__content 
-	display: flex 
-	flex-direction: column 
-.top 
-	height: 120px 
-	align-items: center 
-.horizontal-logo 
-	padding-top: 51px 
-	padding-bottom: 46px 
-	margin-right: 108px 
-.search-bar 
-	position: relative 
-	margin-right: 368px 
-.search-bar__find-bar 
-	width: 350px 
-	height: 40px 
-	border: 1px solid #f5fafe 
-	background: #f5fafe 
-	border-radius: 6px 
-.search-bar__find-button 
-	width: 65px 
-	height: 40px 
-	border: 1px solid #ec1f46 
-	background: #ec1f46 
-	border-radius: 0px 6px 6px 0px 
-	position: absolute 
-	right: 0 
-	top: 0 
-	&:hover 
-		cursor: pointer 
-.user-profile 
-	display: flex 
-	align-items: center 
-	&:hover
-		cursor: pointer
-.user-profile__name 
-	font-size: 14px 
-	line-height: 18px 
-	color: #333333 
-.user-profile__avatar 
-	width: 40px 
-	height: 40px 
-	object-fit: cover 
-	border-radius: 50% 
-	margin-right: 18px 
-.nav 
-	padding: 31px 0 31px 0 
-	background: #0a223d 
-.nav__menu 
-	padding: 0 
-	flex-direction: row 
-.nav__item 
-	font-size: 14px 
-	font-weight: 700 
-	margin: 0 
-	list-style: none 
-	text-transform: uppercase 
-	&:hover 
-		text-decoration: underline 
-.nav-ref
-	color: #ffffff 
+// подключение переменных
+@import 'sass/_variables'
+
+// подключение normalize
+@import 'sass/_normalize'
+
+// подключение header
+@import 'sass/sections/_header'
+
