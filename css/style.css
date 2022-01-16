@@ -747,4 +747,78 @@ button:hover {
      object-fit: cover;
   border-radius: 10px;
 }
+
+.newsletter {
+  padding-right: 75px;
+  padding-right-border: none;
+}
+
+.newsletter__styling {
+  position: relative;
+}
+
+.newsletter__backgroung {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.newsletter__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.newsletter__content {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter__subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newsletter__to-our {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.newsletter__title {
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter__bar {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.newsletter__text {
+  width: 350px;
+  height: 55px;
+  font-weight: 300;
+  font-size: 14px;
+  padding-left: 23px;
+}
+
+.newsletter__button {
+  width: 65px;
+  height: 55px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
