@@ -1,6 +1,7 @@
 .hotel
   background: $color-background-light
   color: $color-text-dark
+  margin-bottom: 70px
   &__content
     flex-direction: column
   &__bio
@@ -28,12 +29,25 @@
     padding-bottom: 4px
   &__bonus
     font-size: 12px
+  &__photos
+    position: relative
   &__photo
     width: 728px
     height: 450px
     object-fit: cover
     border-radius: 8px
     overflow: hidden
+    &-arrow-left
+      position: absolute
+      top: 219px
+      left: 26px
+      cursor: pointer
+    &-arrow-right
+      position: absolute
+      top: 219px
+      right: 26px
+      transform: rotate(180deg)
+      cursor: pointer
   &__rating
     width: 65px
     height: 45px

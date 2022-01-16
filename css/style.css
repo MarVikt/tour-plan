@@ -509,6 +509,7 @@ button:hover {
 .hotel {
   background: #f5fafe;
   color: #333333;
+  margin-bottom: 70px;
 }
 
 .hotel__content {
@@ -563,6 +564,10 @@ button:hover {
   font-size: 12px;
 }
 
+.hotel__photos {
+  position: relative;
+}
+
 .hotel__photo {
   width: 728px;
   height: 450px;
@@ -570,6 +575,22 @@ button:hover {
      object-fit: cover;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.hotel__photo-arrow-left {
+  position: absolute;
+  top: 219px;
+  left: 26px;
+  cursor: pointer;
+}
+
+.hotel__photo-arrow-right {
+  position: absolute;
+  top: 219px;
+  right: 26px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .hotel__rating {
