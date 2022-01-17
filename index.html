@@ -55,8 +55,9 @@
   <!-- /.header -->
 
   <section class="breadcrumb">
-    <div class="breadcrumb-content boundaries">
-          <span class="breadcrumb__item">Home / Flash Offers / Grand Hilton Hotel</span>
+    <div class="breadcrumb__content boundaries">
+      <a href="#" class="breadcrumb__ref"><span class="breadcrumb__item">Home / Flash Offers / Grand Hilton Hotel</span>
+      </a>
     </div>
   </section>
 
@@ -74,13 +75,13 @@
           </div>
           <div class="hotel__title">
             <div class="hotel__name">GRAND HILTON HOTEL</div>
-            <button class="hotel__offer">Flash Offer</button>
+            <span class="hotel__offer">Flash Offer</span>
           </div>
           <div class="hotel__bonus">
             Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
           </div>
         </div>
-  
+
         <div class="hotel__rating">
           <span class="hotel__user-rating">User Rattings</span>
           <span class="hotel__number-rating">4.5/<span class="hotel__number-all">5</span></span>
@@ -103,7 +104,7 @@
                 <span class="hotel__booking-price-item">$ 8,500</span>
                 <span class="hotel__booking-price-type">per room / night</span>
               </div>
-  
+
               <div class="hotel__booking-right">
                 <div class="hotel__booking-persons">
                   <img class="hotel__booking-man" src="img/man.svg" alt="guests">
@@ -114,14 +115,15 @@
                   <span class="hotel__booking-room-number">1 x Room</span>
                 </div>
               </div>
-  
+
             </div>
 
             <div class="hotel__booking-call-centre">
               <span class="hotel__booking-quick">Quick Booking</span>
               <div class="hotel__booking-call">
                 <img class="hotel__booking-call-img" src="img/phone.svg" alt="call">
-                <span class="hotel__booking-call-number">12100</span>
+                <a href="tel:01234567890" class="hotel__booking-call-number">12100</a>
+                <!-- <span class="hotel__booking-call-number">12100</span> -->
               </div>
             </div>
 
@@ -133,39 +135,63 @@
           </div>
         </div>
       </div>
-  
+
     </div>
   </section>
   <!-- /.hotel -->
 
   <section class="newsletter">
-    <div class="newsletter__styling"> 
+    <div class="newsletter__content boundaries">
 
-      <img class="newsletter__backgroung" src="img/newsletter.jpg" alt="">
-      <img class="newsletter__shadow" src="img/newsletter-shadow.jpg" alt="">
-
-      <div class="newsletter__content boundaries">
-  
-        <div class="newsletter__subscribe">
-          <span class="newsletter__to-our">subscribe to our</span>
-          <span class="newsletter__title">Newsletter</span>
-        </div>
-  
-        <!-- <div class="newsletter__send"> -->
-          <form action="#" class="newsletter__bar">
-            <input type="text" class="newsletter__text" name="newsletter-mail" placeholder="Your email address">
-            <button class="newsletter__button">Send</button>
-          </form>
-        <!-- </div> -->
-  
+      <div class="newsletter__subscribe">
+        <span class="newsletter__to-our">subscribe to our</span>
+        <span class="newsletter__title">Newsletter</span>
       </div>
-  
+
+      <form action="#" class="newsletter__bar">
+        <input type="text" class="newsletter__text" name="newsletter-mail" placeholder="Your email address">
+        <button class="newsletter__button">Send</button>
+      </form>
+
     </div>
   </section>
   <!-- /.newsletter -->
 
-
-
+  <section class="about-us">
+    <div class="about-us__content">
+  
+      <div class="about-us__title">What people think about us</div>
+  
+      <div class="about-us__feedback">
+        <img class="about-us__arrow-left" src="img/arrow-tale.svg" alt="Previous tale">
+  
+        <div class="about-us__user">
+          <span class="about-us__user-name">Megan Fox</span>
+          <span class="about-us__date">Stayed 18 Nov, 2019</span>
+          <div class="about-us__rating">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+          </div>
+          <p class="about-us__message">It was very nice hotel with cleanliness. Staff behavior was good and polite. They
+            welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and
+            amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of
+            the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular
+            places but self location in a narrow street is not good. Overall it was a good experience and could recommend.
+          </p>
+          <img class="about-us__user-avatar" src="img/feedback-avatar.jpg" alt="Avatar of the person who wrote the review">
+          <img class="about-us__open" src="img/quotes.svg" alt="Open quotes">
+          <img class="about-us__close" src="img/quotes.svg" alt="Open quotes">
+        </div>
+  
+        <img class="about-us__arrow-right" src="img/arrow-tale.svg" alt="Previous tale">
+      </div>
+  
+    </div>
+  </section>
+  <!-- /.about-us -->
 
 
 </body>
