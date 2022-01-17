@@ -978,4 +978,68 @@ button:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+.other {
+  width: 100%;
+  background: #f5fafe;
+  color: #000000;
+  padding-top: 40px;
+}
+
+.other__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.other__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+
+.other__activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.other__active {
+  position: relative;
+  margin-right: 30px;
+}
+
+.other__img {
+  width: 255px;
+  height: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  background-blend-mode: multiply;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  overflow: hidden;
+}
+
+.other__offer {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  position: absolute;
+  left: 27px;
+  top: 143px;
+}
+
+.other__get {
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 7px 21px;
+  position: absolute;
+  left: 27px;
+  bottom: 27px;
+}
 /*# sourceMappingURL=style.css.map */
