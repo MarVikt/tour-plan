@@ -3,10 +3,16 @@
   background: $color-background-light
   color: $color-text-dark
   text-align: center
+  &__content
+    flex-direction: column
+    align-items: center
+    padding-top: 42px
+    padding-bottom: 70px
   &__title
     font-weight: 700
     font-size: 36px
     text-transform: uppercase
+    margin-bottom: 116px
   &__feedback
     display: flex
   &__user
@@ -15,41 +21,60 @@
     background: $color-background-white
     width: 731px
     height: 280px
+    padding: 55px 97px 20px 97px
+    margin-left: 146px
+    margin-right: 146px
     position: relative
     &-name
       font-weight: 700
       font-size: 12px
       color: $color-text-red
+      margin-bottom: 11px
     &-avatar
       width: 90px
       height: 90px
       object-fit: cover
-      border-radius: 50% 
+      border-radius: 50%
+      position: absolute
+      left: 44%
+      top: -45px
   &__date
     font-size: 10px
     color: $color-text-black
+  &__rating
+    margin-bottom: 15px
   &__message
     font-size: 12px
     line-height: 160%
     text-align: justify
+    max-height: 114px
+    overflow: hidden
+    text-overflow: ellipsis
+    overflow-wrap: break-word
   &__open
     width: 70px
     height: 48px
     position: absolute
-    left: 33.89%
-    right: 61.25%
-    top: 45.14%
-    bottom: 53.31%
+    left: 8.49%
+    top: 5.14%
     opacity: 0.4
   &__close
     width: 70px
     height: 48px
     position: absolute
     transform: rotate(180deg)
-    left: 66.32%
-    right: 28.82%
-    top: 47.04%
-    bottom: 51.42%
+    right: 8.62%
+    top: 43.04%
     opacity: 0.4
+  &__previous-feedback
+    background: $color-background-light
+    height: 18px
+    padding-top: 95px
+  &__next-feedback
+    background: $color-background-light
+    height: 18px
+    padding-top: 95px
+  &__arrow-right
+    transform: rotate(180deg)
 
 

@@ -573,9 +573,6 @@ button:hover {
 
 .hotel__photos {
   position: relative;
-  background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   border-radius: 8px;
 }
 
@@ -585,7 +582,18 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
+  background-blend-mode: multiply;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   overflow: hidden;
+}
+
+.hotel__photo-previous {
+  background: #f5fafe;
+}
+
+.hotel__photo-next {
+  background: #f5fafe;
 }
 
 .hotel__photo-arrow-left {
@@ -598,7 +606,7 @@ button:hover {
 .hotel__photo-arrow-right {
   position: absolute;
   top: 219px;
-  right: 26px;
+  right: 58px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   cursor: pointer;
@@ -815,9 +823,10 @@ button:hover {
 .newsletter__text {
   width: 350px;
   height: 55px;
+  padding-left: 23px;
+  padding-right: 70px;
   font-weight: 300;
   font-size: 14px;
-  padding-left: 23px;
   border: none;
 }
 
@@ -838,10 +847,23 @@ button:hover {
   text-align: center;
 }
 
+.about-us__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 42px;
+  padding-bottom: 70px;
+}
+
 .about-us__title {
   font-weight: 700;
   font-size: 36px;
   text-transform: uppercase;
+  margin-bottom: 116px;
 }
 
 .about-us__feedback {
@@ -861,6 +883,9 @@ button:hover {
   background: #ffffff;
   width: 731px;
   height: 280px;
+  padding: 55px 97px 20px 97px;
+  margin-left: 146px;
+  margin-right: 146px;
   position: relative;
 }
 
@@ -868,6 +893,7 @@ button:hover {
   font-weight: 700;
   font-size: 12px;
   color: #ec1f46;
+  margin-bottom: 11px;
 }
 
 .about-us__user-avatar {
@@ -876,6 +902,9 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  position: absolute;
+  left: 44%;
+  top: -45px;
 }
 
 .about-us__date {
@@ -883,20 +912,26 @@ button:hover {
   color: #000000;
 }
 
+.about-us__rating {
+  margin-bottom: 15px;
+}
+
 .about-us__message {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+  max-height: 114px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
 }
 
 .about-us__open {
   width: 70px;
   height: 48px;
   position: absolute;
-  left: 33.89%;
-  right: 61.25%;
-  top: 45.14%;
-  bottom: 53.31%;
+  left: 8.49%;
+  top: 5.14%;
   opacity: 0.4;
 }
 
@@ -906,10 +941,25 @@ button:hover {
   position: absolute;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  left: 66.32%;
-  right: 28.82%;
-  top: 47.04%;
-  bottom: 51.42%;
+  right: 8.62%;
+  top: 43.04%;
   opacity: 0.4;
+}
+
+.about-us__previous-feedback {
+  background: #f5fafe;
+  height: 18px;
+  padding-top: 95px;
+}
+
+.about-us__next-feedback {
+  background: #f5fafe;
+  height: 18px;
+  padding-top: 95px;
+}
+
+.about-us__arrow-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=style.css.map */

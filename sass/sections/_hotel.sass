@@ -30,15 +30,19 @@
     font-size: 12px
   &__photos
     position: relative
-    background-blend-mode: multiply
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
     border-radius: 8px
   &__photo
     width: 728px
     height: 450px
     object-fit: cover
     border-radius: 8px
+    background-blend-mode: multiply
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
     overflow: hidden
+    &-previous
+      background: $color-background-light
+    &-next
+      background: $color-background-light
     &-arrow-left
       position: absolute
       top: 219px
@@ -47,7 +51,7 @@
     &-arrow-right
       position: absolute
       top: 219px
-      right: 26px
+      right: 58px
       transform: rotate(180deg)
       cursor: pointer
   &__rating
