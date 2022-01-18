@@ -407,6 +407,10 @@ button:hover {
   margin-right: 108px;
 }
 
+.horizontal-logo-img {
+  width: 177px;
+}
+
 .search-bar {
   position: relative;
   margin-right: 368px;
@@ -531,7 +535,7 @@ button:hover {
   width: 100%;
   background: #f5fafe;
   color: #333333;
-  margin-bottom: 67px;
+  padding-bottom: 67px;
 }
 
 .hotel__content {
@@ -794,6 +798,7 @@ button:hover {
   background-size: 100% auto;
   background-position-x: center;
   background-position-y: 100%;
+  background-repeat: no-repeat;
 }
 
 .newsletter__content {
@@ -883,9 +888,13 @@ button:hover {
 }
 
 .about-us__feedback {
+  width: 1065px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about-us__user {
@@ -900,8 +909,6 @@ button:hover {
   width: 731px;
   height: 280px;
   padding: 55px 97px 20px 97px;
-  margin-left: 146px;
-  margin-right: 146px;
   position: relative;
 }
 
@@ -984,6 +991,7 @@ button:hover {
   background: #f5fafe;
   color: #000000;
   padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .other__content {
@@ -1005,11 +1013,13 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .other__active {
   position: relative;
-  margin-right: 30px;
 }
 
 .other__img {
@@ -1041,5 +1051,195 @@ button:hover {
   position: absolute;
   left: 27px;
   bottom: 27px;
+}
+
+@media (max-width: 1200px) {
+  .boundaries {
+    max-width: 960px;
+  }
+  .search-bar {
+    margin-right: 218px;
+  }
+  .hotel__visualization {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hotel__info {
+    width: 728px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel__photos {
+    margin-bottom: 30px;
+  }
+  .about-us__feedback {
+    width: 960px;
+  }
+  .other__img {
+    width: 225px;
+    height: 225px;
+  }
+  .other__offer {
+    top: 128px;
+  }
+}
+
+@media (max-width: 992px) {
+  .boundaries {
+    max-width: 762px;
+  }
+  .top {
+    width: 762px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .horizontal-logo {
+    margin: 0;
+  }
+  .search-bar {
+    margin: 0;
+  }
+  .search-bar__find-bar {
+    width: 320px;
+  }
+  .about-us__feedback {
+    width: 762px;
+  }
+  .about-us__user {
+    width: 600px;
+  }
+  .hotel__booking {
+    width: 347px;
+    padding: 30px 30px 28px 23px;
+  }
+  .other__activities {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .other__img {
+    width: 339px;
+    height: 255px;
+  }
+  .other__active {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .other__offer {
+    top: 143px;
+  }
+}
+
+@media (max-width: 768px) {
+  .boundaries {
+    max-width: 700px;
+  }
+  .top {
+    height: 100px;
+  }
+  .horizontal-logo-img {
+    width: 133px;
+  }
+  .search-bar__find-bar {
+    width: 340px;
+  }
+  .user {
+    margin-left: 26px;
+  }
+  .nav {
+    padding: 23px 0 23px 0;
+  }
+  .nav__menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav__item {
+    font-size: 12px;
+  }
+  .breadcrumb {
+    margin-top: 160px;
+  }
+  .hotel {
+    padding-bottom: 35px;
+  }
+  .hotel__photos {
+    margin-bottom: 8px;
+  }
+  .hotel__photo {
+    width: 700px;
+    height: 450px;
+  }
+  .hotel__booking {
+    width: 340px;
+    padding: 30px 22px 23px 23px;
+  }
+  .newsletter__content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 95px;
+  }
+  .newsletter__subscribe {
+    margin: 0;
+  }
+  .about-us__feedback {
+    width: 692px;
+  }
+  .about-us__title {
+    font-size: 30px;
+    margin-bottom: 97px;
+  }
+  .about-us__user {
+    width: 580px;
+    height: 300px;
+    padding: 55px 60px 19px 65px;
+  }
+  .about-us__user-avatar {
+    left: 42%;
+  }
+  .about-us__previous-feedback {
+    padding-top: 118px;
+  }
+  .about-us__next-feedback {
+    padding-top: 118px;
+  }
+  .about-us__message {
+    max-height: 133px;
+  }
+  .other {
+    padding-top: 29px;
+  }
+  .other__activities {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .other__active {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .boundaries {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .boundaries {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .boundaries {
+    max-width: 279px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
