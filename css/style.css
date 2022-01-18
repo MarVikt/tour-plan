@@ -1277,6 +1277,7 @@ button:hover {
   }
   .hotel__photo {
     width: 480px;
+    height: 309px;
   }
   .hotel__info {
     width: 480px;
@@ -1290,6 +1291,7 @@ button:hover {
   }
   .hotel__map-point {
     width: 480px;
+    height: 295px;
   }
   .newsletter__content {
     -webkit-box-orient: vertical;
@@ -1338,6 +1340,26 @@ button:hover {
 @media (max-width: 480px) {
   .boundaries {
     max-width: 320px;
+  }
+  .hotel__rating {
+    display: none;
+  }
+  .hotel__description {
+    padding-bottom: 30px;
+  }
+  .hotel__photo {
+    width: 320px;
+    height: 206px;
+  }
+  .hotel__info {
+    width: 320px;
+  }
+  .hotel__booking {
+    width: 320px;
+  }
+  .hotel__map-point {
+    width: 320px;
+    height: 197px;
   }
 }
 
