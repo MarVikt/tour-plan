@@ -521,14 +521,6 @@ button:hover {
   color: #ffffff;
 }
 
-.breadcrumb {
-  margin-top: 200px;
-  width: 100%;
-  padding: 18px 0 19px 0;
-  background: #f5fafe;
-  color: #333333;
-}
-
 .breadcrumb__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,6 +528,7 @@ button:hover {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
+  padding: 18px 0 19px 0;
 }
 
 .breadcrumb__item {
@@ -559,9 +552,10 @@ button:hover {
 
 .hotel {
   width: 100%;
+  margin-top: 200px;
+  padding-bottom: 67px;
   background: #f5fafe;
   color: #333333;
-  padding-bottom: 67px;
 }
 
 .hotel__content {
