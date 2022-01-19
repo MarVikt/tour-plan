@@ -409,6 +409,7 @@ button:hover {
 
 .horizontal-logo-img {
   width: 177px;
+  height: 24px;
 }
 
 .search-bar {
@@ -523,7 +524,6 @@ button:hover {
 .breadcrumb {
   margin-top: 200px;
   width: 100%;
-  height: 48px;
   padding: 18px 0 19px 0;
   background: #f5fafe;
   color: #333333;
@@ -572,7 +572,6 @@ button:hover {
 }
 
 .hotel__bio {
-  height: 102px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,6 +581,28 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 22px;
+}
+
+.hotel__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel__stars {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.hotel__star {
+  width: 8px;
+  height: 8px;
 }
 
 .hotel__name {
@@ -591,15 +612,6 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
   margin-right: 14px;
-}
-
-.hotel__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .hotel__offer {
@@ -613,6 +625,8 @@ button:hover {
 
 .hotel__bonus {
   font-size: 12px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .hotel__photos {
@@ -1171,6 +1185,7 @@ button:hover {
   }
   .horizontal-logo-img {
     width: 133px;
+    height: 18px;
   }
   .search-bar__find-bar {
     width: 340px;
@@ -1194,6 +1209,10 @@ button:hover {
   .hotel {
     padding-bottom: 35px;
   }
+  .hotel__rating {
+    width: 80px;
+    height: 45px;
+  }
   .hotel__photos {
     margin-bottom: 8px;
   }
@@ -1213,6 +1232,9 @@ button:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 95px;
+  }
+  .newsletter__text {
+    padding-left: 33px;
   }
   .newsletter__subscribe {
     margin: 0;
@@ -1252,6 +1274,9 @@ button:hover {
   .other__active {
     margin-bottom: 16px;
   }
+  .other__offer {
+    width: 200px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1277,6 +1302,9 @@ button:hover {
   }
   .breadcrumb {
     margin-top: 80px;
+  }
+  .hotel__rating {
+    display: none;
   }
   .hotel__photo {
     width: 480px;
@@ -1350,8 +1378,15 @@ button:hover {
   .hotel__rating {
     display: none;
   }
-  .hotel__description {
-    padding-bottom: 30px;
+  .hotel__offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 170px;
+  }
+  .hotel__stars {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
   .hotel__photo {
     width: 320px;
@@ -1404,6 +1439,90 @@ button:hover {
 @media (max-width: 320px) {
   .boundaries {
     max-width: 279px;
+  }
+  .top {
+    height: 70px;
+  }
+  .horizontal-logo {
+    padding: 0;
+  }
+  .horizontal-logo-img {
+    width: 99px;
+    height: 14px;
+  }
+  .breadcrumb {
+    margin-top: 70px;
+    padding-bottom: 8px;
+  }
+  .hotel__description {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hotel__bio {
+    margin-bottom: 40px;
+  }
+  .hotel__offer {
+    margin-right: 138px;
+    margin-bottom: 10px;
+  }
+  .hotel__stars {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+  }
+  .hotel__photos {
+    margin-bottom: 0;
+  }
+  .hotel__photo {
+    width: 278px;
+    height: 179px;
+  }
+  .hotel__booking {
+    width: 278px;
+    margin-bottom: 21px;
+  }
+  .hotel__map-point {
+    width: 278px;
+    height: 172px;
+  }
+  .newsletter {
+    height: 320px;
+    background-position-y: 80%;
+  }
+  .newsletter__content {
+    padding-top: 79px;
+  }
+  .newsletter__text {
+    width: 280px;
+    padding-left: 19px;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .about-us__title {
+    font-size: 18px;
+    line-height: 23px;
+    width: 245px;
+    margin-bottom: 87px;
+  }
+  .about-us__feedback {
+    width: 278px;
+  }
+  .about-us__user {
+    width: 280px;
+    height: 355px;
+    border-radius: 8px;
+    padding: 55px 40px 19px 40px;
+  }
+  .about-us__user-avatar {
+    left: 30%;
+  }
+  .about-us__message {
+    max-height: 190px;
+  }
+  .other__img {
+    width: 278px;
+    height: 255px;
   }
 }
 /*# sourceMappingURL=style.css.map */

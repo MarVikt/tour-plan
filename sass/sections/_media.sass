@@ -61,6 +61,7 @@
     height: 100px
   .horizontal-logo-img
     width: 133px
+    height: 18px
   .search-bar__find-bar
     width: 340px
   .user
@@ -75,6 +76,9 @@
     margin-top: 160px
   .hotel
     padding-bottom: 35px
+    &__rating
+      width: 80px
+      height: 45px
     &__photos
       margin-bottom: 8px
     &__photo
@@ -88,6 +92,8 @@
     &__content
       justify-content: space-between
       padding-top: 95px
+    &__text
+      padding-left: 33px
     &__subscribe
       margin: 0
   .about-us
@@ -114,6 +120,9 @@
       justify-content: space-between
     &__active
       margin-bottom: 16px
+    &__offer
+      width: 200px
+
 // --------------------------------------------------
 @media (max-width: 576px)
   .boundaries
@@ -131,6 +140,8 @@
   .breadcrumb
     margin-top: 80px
   .hotel
+    &__rating
+      display: none
     &__photo
       width: 480px
       height: 309px
@@ -180,8 +191,11 @@
   .hotel
     &__rating
       display: none
-    &__description
-      padding-bottom: 30px
+    &__offer
+      order: -1
+      margin-right: 170px
+    &__stars
+      flex-basis: 20%
     &__photo
       width: 320px
       height: 206px
@@ -221,3 +235,66 @@
 @media (max-width: 320px)
   .boundaries
     max-width: 279px
+  .top
+    height: 70px
+  .horizontal-logo
+    padding: 0
+    &-img
+      width: 99px
+      height: 14px
+  .breadcrumb
+    margin-top: 70px
+    padding-bottom: 8px
+  .hotel
+    &__description
+      align-items: flex-start
+    &__bio
+      margin-bottom: 40px
+    &__offer
+      margin-right: 138px
+      margin-bottom: 10px
+    &__stars
+      flex-basis: 22%
+    &__photos
+      margin-bottom: 0
+    &__photo
+      width: 278px
+      height: 179px
+    &__booking
+      width: 278px
+      margin-bottom: 21px
+    &__map-point
+      width: 278px
+      height: 172px
+  .newsletter
+    height: 320px
+    background-position-y: 80%
+    &__content
+      padding-top: 79px
+    &__text
+      width: 280px
+      padding-left: 19px
+    &__title
+      margin-bottom: 37px
+  .about-us
+    &__title
+      font-size: 18px
+      line-height: 23px
+      width: 245px
+      margin-bottom: 87px
+    &__feedback
+      width: 278px
+    &__user
+      width: 280px
+      height: 355px
+      border-radius: 8px
+      padding: 55px 40px 19px 40px
+      &-avatar
+        left: 30%
+    &__message
+      max-height: 190px
+  .other
+    &__img
+      width: 278px
+      height: 255px
+
