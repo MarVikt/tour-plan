@@ -1093,6 +1093,72 @@ button:hover {
   bottom: 27px;
 }
 
+@media (max-width: 1960px) {
+  .boundaries {
+    max-width: 1680px;
+  }
+  .top {
+    width: 1680px;
+  }
+  .search-bar__find-bar {
+    width: 450px;
+  }
+  .hotel__photo {
+    width: 1300px;
+    height: 450px;
+  }
+  .newsletter__text {
+    width: 450px;
+  }
+  .other__img {
+    width: 390px;
+    height: 255px;
+  }
+  .other__offer {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .boundaries {
+    max-width: 1360px;
+  }
+  .top {
+    width: 1360px;
+  }
+  .hotel__photo {
+    width: 980px;
+    height: 450px;
+  }
+  .other__img {
+    width: 315px;
+    height: 255px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .boundaries {
+    max-width: 1110px;
+  }
+  .search-bar__find-bar {
+    width: 350px;
+  }
+  .hotel__photo {
+    width: 728px;
+    height: 450px;
+  }
+  .newsletter__text {
+    width: 350px;
+  }
+  .other__img {
+    width: 255px;
+    height: 255px;
+  }
+  .other__offer {
+    width: 180px;
+  }
+}
+
 @media (max-width: 1280px) {
   .boundaries {
     max-width: 960px;
