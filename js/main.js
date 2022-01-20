@@ -9,4 +9,9 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.hotel__photo-button--previous',
   },
 
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
 });
