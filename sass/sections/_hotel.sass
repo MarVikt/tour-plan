@@ -57,17 +57,17 @@
   &__bonus
     font-size: 12px
     flex-basis: 100%
-  &__photos
-    position: relative
-    border-radius: 8px
-  &__photo
-    width: 728px
-    height: 450px
-    object-fit: cover
-    border-radius: 8px
-    background-blend-mode: multiply
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    overflow: hidden
+  // &__photos
+  //   position: relative
+    // border-radius: 8px
+  // &__photo
+  //   width: 728px
+  //   height: 450px
+  //   object-fit: cover
+    // border-radius: 8px
+    // background-blend-mode: multiply
+    // background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    // overflow: hidden
     &-previous
       background: $color-background-light
     &-next
@@ -166,4 +166,16 @@
     height: 213px
     object-fit: cover
     border-radius: 10px
-    
+.swiper
+  width: 728px
+  height: 450px
+  border-radius: 8px
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+
+

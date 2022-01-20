@@ -623,47 +623,6 @@ button:hover {
       flex-basis: 100%;
 }
 
-.hotel__photos {
-  position: relative;
-  border-radius: 8px;
-}
-
-.hotel__photo {
-  width: 728px;
-  height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 8px;
-  background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  overflow: hidden;
-}
-
-.hotel__photo-previous {
-  background: #f5fafe;
-}
-
-.hotel__photo-next {
-  background: #f5fafe;
-}
-
-.hotel__photo-arrow-left {
-  position: absolute;
-  top: 219px;
-  left: 26px;
-  cursor: pointer;
-}
-
-.hotel__photo-arrow-right {
-  position: absolute;
-  top: 219px;
-  right: 58px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  cursor: pointer;
-}
-
 .hotel__rating {
   width: 65px;
   height: 45px;
@@ -821,6 +780,22 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+.swiper {
+  width: 728px;
+  height: 450px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.swiper:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
 }
 
 .newsletter {

@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -98,13 +99,35 @@
 
       <div class="hotel__visualization">
         <div class="hotel__photos">
-          <img class="hotel__photo" src="img/hotel-photo-1.jpg" alt="Photo of hotel">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="img/hotel-photo-1.jpg" alt="Photo of hotel">
+              <img class="swiper-slide" src="img/hotel-photo-2.jpeg" alt="Photo of hotel">
+              <img class="swiper-slide" src="img/hotel-photo-3.jpg" alt="Photo of hotel">
+              <img class="swiper-slide" src="img/hotel-photo-4.jpg" alt="Photo of hotel">
+              <img class="swiper-slide" src="img/hotel-photo-5.jpg" alt="Photo of hotel">
+              <img class="swiper-slide" src="img/hotel-photo-6.jpg" alt="Photo of hotel">
+              <img class="swiper-slide" src="img/hotel-photo-7.jpg" alt="Photo of hotel">
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+          </div>
+        
+        
+        
+          <!-- <img class="hotel__photo" src="img/hotel-photo-1.jpg" alt="Photo of hotel">
           <button class="hotel__photo-previous">
             <img class="hotel__photo-arrow-left" src="img/arrow-photo.svg" alt="Previous photo">
           </button>
           <button class="hotel__photo-next">
             <img class="hotel__photo-arrow-right" src="img/arrow-photo.svg" alt="Next photo">
-          </button>
+          </button> -->
         </div>
 
         <div class="hotel__info">
@@ -247,6 +270,8 @@
   </section>
   <!-- /.other -->
 
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
