@@ -127,14 +127,15 @@
     &__rating
       width: 80px
       height: 45px
-    &__photos
-      margin-bottom: 8px
-    &__photo
-      width: 700px
-      height: 450px
     &__booking
       width: 340px
+      min-height: 213px
       padding: 30px 22px 23px 23px
+    &__map-point
+      width: 340px
+  .swiper
+    width: 700px
+    margin-bottom: 8px
   .newsletter
     background-size: 100% auto
     &__content
@@ -172,6 +173,69 @@
       width: 200px
 
 // --------------------------------------------------
+@media (max-width: 767px)
+  .boundaries
+    max-width: 560px
+  .top
+    height: 80px
+  .search-bar__find-bar
+    width: 200px
+  .user
+    margin-left: 26px
+  .nav
+    padding: 23px 0 23px 0
+    &__item
+      font-size: 11px
+  .hotel
+    margin-top: 139px
+    &__breadcrumb-list
+      margin-bottom: 0
+    &__rating
+      display: none
+    &__photos
+      margin-bottom: 15px
+    &__booking
+      width: 230px
+      min-height: 213px
+      &-call-centre
+        font-size: 16px
+    &__map-point
+      width: 300px
+  .swiper
+    width: 560px
+  .newsletter
+    &__title
+      font-size: 32px
+    &__text
+      width: 315px
+  .about-us
+    &__feedback
+      width: 600px
+    &__title
+      font-size: 30px
+      margin-bottom: 97px
+    &__user
+      width: 550px
+      height: 300px
+      padding: 55px 60px 19px 65px
+      &-avatar
+        left: 42%
+    &__previous-feedback
+      padding-top: 118px
+    &__next-feedback
+      padding-top: 118px
+    &__message
+      max-height: 133px
+  .other
+    padding-top: 29px
+    &__activities
+      justify-content: space-between
+    &__active
+      margin-bottom: 16px
+    &__offer
+      width: 200px
+
+// --------------------------------------------------
 @media (max-width: 640px)
   .boundaries
     max-width: 480px
@@ -185,9 +249,9 @@
     display: none
   .top
     height: 80px
-  .breadcrumb
-    margin-top: 80px
   .hotel
+    &__breadcrumb
+      margin-top: 80px
     &__rating
       display: none
     &__photo
