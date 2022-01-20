@@ -5,8 +5,8 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.hotel__photo-next',
+    prevEl: '.hotel__photo-previous',
   },
 
 });
