@@ -1,24 +1,18 @@
 .header 
-	position: absolute 
 	width: 100% 
-	left: 0px 
-	top: 0px 
 	&__content 
 		display: flex 
 		flex-direction: column 
 .top 
-	height: 120px 
 	align-items: center 
+	padding-top: 40px 
+	padding-bottom: 40px 
 .horizontal-logo 
-	padding-top: 51px 
-	padding-bottom: 46px 
-	margin-right: 108px
 	&-img
 		width: 177px
 		height: 24px
 .search-bar 
-	position: relative 
-	margin-right: 368px
+	position: relative
 	border-radius: 6px
 	overflow: hidden // скрыли уголки по контуру закругления
 	&__find-bar 
@@ -36,21 +30,23 @@
 		position: absolute 
 		right: 0 
 		top: 0 
-.user-profile 
-	display: flex 
-	align-items: center 
-	&:hover
-		cursor: pointer
-	&__name 
-		font-size: 14px 
-		line-height: 18px 
-		color: $color-text-dark 
-	&__avatar 
-		width: 40px 
-		height: 40px 
-		object-fit: cover 
-		border-radius: 50% 
-		margin-right: 18px 
+.user
+	margin-left: 260px
+	&-profile
+		display: flex 
+		align-items: center 
+		&:hover
+			cursor: pointer
+		&__name 
+			font-size: 14px 
+			line-height: 18px 
+			color: $color-text-dark 
+		&__avatar 
+			width: 40px 
+			height: 40px 
+			object-fit: cover 
+			border-radius: 50% 
+			margin-right: 18px 
 .menu-mobile
 	width: 16px
 	height: 11px
