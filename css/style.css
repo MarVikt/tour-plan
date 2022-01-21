@@ -538,6 +538,7 @@ button:hover {
   padding-left: 0;
   margin-top: 0;
   padding: 18px 0 19px 0;
+  margin-bottom: 24px;
 }
 
 .hotel__breadcrumb-item {
@@ -578,9 +579,6 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -590,6 +588,8 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -598,6 +598,7 @@ button:hover {
   width: 8px;
   height: 8px;
   margin-right: 2px;
+  margin-bottom: 2px;
 }
 
 .hotel__name {
@@ -650,11 +651,8 @@ button:hover {
 }
 
 .hotel__rating {
-  width: 65px;
-  height: 45px;
   border-radius: 4px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding: 8px 7px 6px 6px;
   background: #ec1f46;
   color: #ffffff;
   display: -webkit-box;
@@ -675,8 +673,6 @@ button:hover {
 .hotel__user-rating {
   font-weight: 600;
   font-size: 8px;
-  line-height: 10px;
-  padding-top: 8px;
 }
 
 .hotel__number-rating {
@@ -1349,13 +1345,30 @@ button:hover {
     max-width: 560px;
   }
   .search-bar__find-bar {
-    width: 200px;
+    width: 300px;
   }
   .user {
     margin-left: 26px;
   }
+  .user-profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user-profile__avatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
   .nav {
     padding: 23px 0 23px 0;
+  }
+  .nav__menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav__item {
     font-size: 11px;
@@ -1586,6 +1599,14 @@ button:hover {
   .hotel__breadcrumb-list {
     padding-top: 20px;
     margin-bottom: 4px;
+  }
+  .hotel__description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .hotel__bio {
     margin-bottom: 40px;

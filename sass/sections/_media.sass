@@ -176,11 +176,20 @@
   .boundaries
     max-width: 560px
   .search-bar__find-bar
-    width: 200px
+    width: 300px
   .user
     margin-left: 26px
+    &-profile
+      flex-direction: column
+      &__avatar
+        width: 35px
+        height: 35px
+        margin-right: 0
+        margin-bottom: 5px
   .nav
     padding: 23px 0 23px 0
+    &__menu
+      justify-content: space-between
     &__item
       font-size: 11px
   .hotel
@@ -302,10 +311,6 @@
       width: 320px
     &__name
       margin-right: 0
-    // &__offer
-    //   width: 70px
-    //   height: 20px
-    //   padding: 3px 7px 4px 7px
     &__booking
       width: 320px
     &__map-point
@@ -347,6 +352,9 @@
     &__breadcrumb-list
       padding-top: 20px
       margin-bottom: 4px
+    &__description
+      justify-content: space-between
+      align-items: flex-start
     &__bio
       margin-bottom: 40px
     &__offer

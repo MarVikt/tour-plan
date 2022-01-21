@@ -12,6 +12,7 @@
       padding-left: 0
       margin-top: 0
       padding: 18px 0 19px 0
+      margin-bottom: 24px
     &-item
       font-size: 10px
       line-height: 13px
@@ -33,15 +34,16 @@
   &__description
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
     align-items: center
   &__stars
     display: flex
+    align-self: center
     flex-basis: 100%
   &__star 
     width: 8px
     height: 8px
     margin-right: 2px
+    margin-bottom: 2px
   &__name
     font-weight: 700
     font-size: 24px
@@ -76,11 +78,8 @@
     &-arrow-right
       transform: rotate(180deg)
   &__rating
-    width: 65px
-    height: 45px
     border-radius: 4px
-    padding-top: 9px
-    padding-bottom: 9px
+    padding: 8px 7px 6px 6px
     background: $color-button
     color: $color-text-white
     display: flex
@@ -90,8 +89,6 @@
   &__user-rating
     font-weight: 600
     font-size: 8px
-    line-height: 10px
-    padding-top: 8px
   &__number-rating
     font-weight: 700
     font-size: 14px
