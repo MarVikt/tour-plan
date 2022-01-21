@@ -1092,6 +1092,9 @@ button:hover {
   .top {
     width: 1680px;
   }
+  .hotel {
+    display: none;
+  }
   .search-bar__find-bar {
     width: 450px;
   }
@@ -1157,9 +1160,6 @@ button:hover {
   }
   .user {
     margin-left: 0;
-  }
-  .hotel {
-    display: none;
   }
   .hotel__visualization {
     -ms-flex-wrap: wrap;
