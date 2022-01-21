@@ -10,50 +10,242 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-  <div class="header">
+  <header class="header">
     <div class="header__content">
 
-      <div class="top full-width">
+      <div class="top boundaries">
         <a href="#" class="horizontal-logo" target="_blank"><img class="horizontal-logo-img"
             src="img/horizontal_logo.svg" alt="Logo: Best tour plan"></a>
         <form action="#" class="search-bar">
-          <input type="text" class="search-bar__find-bar" name="search-location" placeholder="     Search Location">
+          <input type="text" class="search-bar__find-bar" name="search-location" placeholder="Search Location">
           <button class="search-bar__find-button">
             <img class="search-bar__loupe-img" src="img/loupe.svg" alt="Search: button">
           </button>
         </form>
-        <div class="user-profile">
-          <img class="user-profile__avatar" src="img/user-avatar.jpg" alt="User avatar">
-          <span class="user-profile__name">Nathan</span>
-        </div>
+        <a href="#" class="user" target="_blank">
+          <div class="user-profile">
+            <img class="user-profile__avatar" src="img/user-avatar.jpg" alt="User avatar">
+            <span class="user-profile__name">Nathan</span>
+          </div>
+        </a>
+        <button class="menu-mobile">
+          <span class="menu-mobile__line"></span>
+          <span class="menu-mobile__line"></span>
+          <span class="menu-mobile__line"></span>
+        </button>
       </div>
 
       <nav class="nav">
-        <ul class="nav__menu full-width">
-          <li class="nav__item">All Deals</li>
-          <li class="nav__item">Hotels</li>
-          <li class="nav__item">Activities</li>
-          <li class="nav__item">Hotel Day Packages</li>
-          <li class="nav__item">Restaurants</li>
-          <li class="nav__item">Events</li>
-          <li class="nav__item">Rodrigues</li>
+        <ul class="nav__menu boundaries">
+          <li class="nav__item"><a href="#" class="nav__ref" target="_blank">All Deals</a></li>
+          <li class="nav__item"><a href="#" class="nav__ref" target="_blank">Hotels</a></li>
+          <li class="nav__item"><a href="#" class="nav__ref" target="_blank">Activities</a></li>
+          <li class="nav__item"><a href="#" class="nav__ref" target="_blank">Hotel Day Packages</a></li>
+          <li class="nav__item"><a href="#" class="nav__ref" target="_blank">Restaurants</a></li>
+          <li class="nav__item"><a href="#" class="nav__ref" target="_blank">Events</a></li>
+          <li class="nav__item"><a href="#" class="nav__ref" target="_blank">Rodrigues</a></li>
         </ul>
       </nav>
 
     </div>
-  </div>
+  </header>
   <!-- /.header -->
 
+  <section class="hotel">
+    <div class="hotel__content boundaries">
 
+      <ul class="hotel__breadcrumb-list">
+        <li class="hotel__breadcrumb-item">
+          <a href="#" class="hotel__breadcrumb-ref">Home</a>
+        </li>
+        <li class="hotel__breadcrumb-item">
+          <a href="#" class="hotel__breadcrumb-ref">Flash Offers</a>
+        </li>
+        <li class="hotel__breadcrumb-item">
+          Grand Hilton Hotel
+        </li>
+      </ul>
 
+      <div class="hotel__bio">
+        <div class="hotel__description">
+          <div class="hotel__stars">
+            <img class="hotel__star" src="img/star.svg" alt="star">
+            <img class="hotel__star" src="img/star.svg" alt="star">
+            <img class="hotel__star" src="img/star.svg" alt="star">
+            <img class="hotel__star" src="img/star.svg" alt="star">
+            <img class="hotel__star" src="img/star.svg" alt="star">
+          </div>
+          <h2 class="hotel__name">GRAND HILTON HOTEL</h2>
+          <span class="hotel__offer">Flash Offer</span>
+          <div class="hotel__bonus">
+            Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
+          </div>
+        </div>
+
+        <div class="hotel__rating">
+          <span class="hotel__user-rating">User Rattings</span>
+          <span class="hotel__number-rating">4.5/<span class="hotel__number-all">5</span></span>
+        </div>
+      </div>
+
+      <div class="hotel__visualization">
+        <div class="hotel__photos">
+          <img class="hotel__photo" src="img/hotel-photo-1.jpg" alt="Photo of hotel">
+          <button class="hotel__photo-previous">
+            <img class="hotel__photo-arrow-left" src="img/arrow-photo.svg" alt="Previous photo">
+          </button>
+          <button class="hotel__photo-next">
+            <img class="hotel__photo-arrow-right" src="img/arrow-photo.svg" alt="Next photo">
+          </button>
+        </div>
+
+        <div class="hotel__info">
+          <div class="hotel__booking">
+
+            <div class="hotel__booking-supply">
+              <div class="hotel__booking-left">
+                <span class="hotel__booking-price">price starts as</span>
+                <span class="hotel__booking-price-item">$ 8,500</span>
+                <span class="hotel__booking-price-type">per room / night</span>
+              </div>
+
+              <div class="hotel__booking-right">
+                <div class="hotel__booking-persons">
+                  <img class="hotel__booking-man" src="img/man.svg" alt="guests">
+                  <span class="hotel__booking-guests">2 x Guests</span>
+                </div>
+                <div class="hotel__booking-rooms">
+                  <img class="hotel__booking-room-img" src="img/room.svg" alt="rooms">
+                  <span class="hotel__booking-room-number">1 x Room</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="hotel__booking-call-centre">
+              <span class="hotel__booking-quick">Quick Booking</span>
+              <div class="hotel__booking-call">
+                <img class="hotel__booking-call-img" src="img/phone.svg" alt="call">
+                <a href="tel:01234567890" class="hotel__booking-call-number">12100</a>
+                <!-- <span class="hotel__booking-call-number">12100</span> -->
+              </div>
+            </div>
+
+            <button class="hotel__booking-button">View Other Options</button>
+          </div>
+
+          <div class="hotel__map">
+            <img class="hotel__map-point" src="img/hotel-map.jpg" alt="Hotel on map">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- /.hotel -->
+
+  <section class="newsletter">
+    <div class="newsletter__content boundaries">
+
+      <div class="newsletter__subscribe">
+        <span class="newsletter__to-our">subscribe to our</span>
+        <h2 class="newsletter__title">Newsletter</h2>
+      </div>
+
+      <form action="#" class="newsletter__bar">
+        <input type="text" class="newsletter__text" name="newsletter-mail" placeholder="Your email address">
+        <button class="newsletter__button">Send</button>
+      </form>
+
+    </div>
+  </section>
+  <!-- /.newsletter -->
+
+  <section class="about-us">
+    <div class="about-us__content boundaries">
+  
+      <h2 class="about-us__title">What people think about us</h2>
+  
+      <div class="about-us__feedback">
+        <button class="about-us__previous-feedback">
+          <img class="about-us__arrow-left" src="img/arrow-tale.svg" alt="Previous feedback">
+        </button>
+  
+        <div class="about-us__user">
+          <span class="about-us__user-name">Megan Fox</span>
+          <span class="about-us__date">Stayed 18 Nov, 2019</span>
+          <div class="about-us__rating">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+            <img class="about-us__star" src="img/star.svg" alt="star">
+          </div>
+          <p class="about-us__message">It was very nice hotel with cleanliness. Staff behavior was good and polite. They
+            welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and
+            amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of
+            the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular
+            places but self location in a narrow street is not good. Overall it was a good experience and could recommend.
+          </p>
+          <img class="about-us__user-avatar" src="img/feedback-avatar.jpg" alt="Avatar of the person who wrote the review">
+          <img class="about-us__open" src="img/quotes.svg" alt="Open quotes">
+          <img class="about-us__close" src="img/quotes.svg" alt="Close quotes">
+        </div>
+
+        <button class="about-us__next-feedback">
+          <img class="about-us__arrow-right" src="img/arrow-tale.svg" alt="Next feedback">
+        </button>
+  
+      </div>
+  
+    </div>
+  </section>
+  <!-- /.about-us -->
+
+  <section class="other">
+    <div class="other__content boundaries">
+
+      <h2 class="other__title">Other Activities</h2>
+
+      <div class="other__activities">
+
+        <div class="other__active">
+          <img class="other__img" src="img/chamarel.jpg" alt="The curious corner of&nbsp;chamarel">
+          <span class="other__offer">The curious corner of&nbsp;chamarel</span>
+          <button class="other__get">Book Now</button>
+        </div>
+
+        <div class="other__active">
+          <img class="other__img" src="img/golf.jpg" alt="Gymkhana club golf course">
+          <span class="other__offer">Gymkhana club golf <br>course</span>
+          <button class="other__get">Book Now</button>
+        </div>
+
+        <div class="other__active">
+          <img class="other__img" src="img/falls.jpg" alt="Tamarind falls hiking trip - full day">
+          <span class="other__offer">Tamarind falls hiking trip&nbsp;-&nbsp;full day</span>
+          <button class="other__get">Book Now</button>
+        </div>
+
+        <div class="other__active">
+          <img class="other__img" src="img/marine.jpg" alt="The blue marine discovery quest">
+          <span class="other__offer">The blue marine discovery quest</span>
+          <button class="other__get">Book Now</button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- /.other -->
 
 
 </body>
