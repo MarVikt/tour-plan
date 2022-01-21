@@ -1,23 +1,3 @@
-.breadcrumb
-  &__list
-    display: flex
-    list-style: none
-    padding-left: 0
-    margin-top: 0
-    padding: 18px 0 19px 0
-  &__item
-    font-size: 10px
-    line-height: 13px
-    padding-right: 2px
-    &:not(:last-child)
-      &::after
-        content: '/'
-  &__ref
-    color: inherit
-    text-decoration: none
-    &:hover
-      &:not(:last-child)
-        cursor: pointer
 .hotel
   width: 100%
   padding-bottom: 67px
@@ -25,6 +5,26 @@
   color: $color-text-dark
   &__content
     flex-direction: column
+  &__breadcrumb
+    &-list
+      display: flex
+      list-style: none
+      padding-left: 0
+      margin-top: 0
+      padding: 18px 0 19px 0
+    &-item
+      font-size: 10px
+      line-height: 13px
+      padding-right: 2px
+      &:not(:last-child)
+        &::after
+          content: '/'
+    &-ref
+      color: inherit
+      text-decoration: none
+      &:hover
+        &:not(:last-child)
+          cursor: pointer
   &__bio
     display: flex
     justify-content: space-between
@@ -56,32 +56,21 @@
   &__bonus
     font-size: 12px
     flex-basis: 100%
-  &__photos
-    position: relative
-    border-radius: 8px
   &__photo
-    width: 728px
-    height: 450px
-    object-fit: cover
-    border-radius: 8px
-    background-blend-mode: multiply
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    overflow: hidden
-    &-previous
-      background: $color-background-light
-    &-next
-      background: $color-background-light
-    &-arrow-left
+    &-button
+      width: 30px
+      height: 30px
+      z-index: 20
       position: absolute
-      top: 219px
-      left: 26px
-      cursor: pointer
+      top: 50%
+      transform: translateY(-50%)
+      background-color: transparent
+      &--previous
+        left: 17px
+      &--next
+        right: 17px
     &-arrow-right
-      position: absolute
-      top: 219px
-      right: 58px
       transform: rotate(180deg)
-      cursor: pointer
   &__rating
     width: 65px
     height: 45px
@@ -165,4 +154,18 @@
     height: 213px
     object-fit: cover
     border-radius: 10px
-    
+.swiper
+  width: 728px
+  height: 450px
+  border-radius: 8px
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+  &-slide
+    object-fit: cover
+
+
