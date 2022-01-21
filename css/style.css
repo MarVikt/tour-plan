@@ -378,10 +378,7 @@ button:hover {
 }
 
 .header {
-  position: absolute;
   width: 100%;
-  left: 0px;
-  top: 0px;
 }
 
 .header__content {
@@ -395,16 +392,11 @@ button:hover {
 }
 
 .top {
-  height: 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.horizontal-logo {
-  padding-top: 51px;
-  padding-bottom: 46px;
-  margin-right: 108px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .horizontal-logo-img {
@@ -414,7 +406,6 @@ button:hover {
 
 .search-bar {
   position: relative;
-  margin-right: 368px;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -436,6 +427,10 @@ button:hover {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.user {
+  margin-left: 260px;
 }
 
 .user-profile {
@@ -523,7 +518,6 @@ button:hover {
 
 .hotel {
   width: 100%;
-  margin-top: 200px;
   padding-bottom: 67px;
   background: #f5fafe;
   color: #333333;
@@ -543,6 +537,7 @@ button:hover {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
+  margin-bottom: 23px;
   padding: 18px 0 19px 0;
 }
 
@@ -590,13 +585,18 @@ button:hover {
 }
 
 .hotel__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-bottom: 5px;
 }
 
 .hotel__star {
   width: 8px;
   height: 8px;
+  margin-right: 2px;
 }
 
 .hotel__name {
@@ -648,11 +648,8 @@ button:hover {
 }
 
 .hotel__rating {
-  width: 65px;
-  height: 45px;
+  padding: 2px 7px 6px 7px;
   border-radius: 4px;
-  padding-top: 9px;
-  padding-bottom: 9px;
   background: #ec1f46;
   color: #ffffff;
   display: -webkit-box;

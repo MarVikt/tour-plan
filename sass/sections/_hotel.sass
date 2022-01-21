@@ -1,6 +1,5 @@
 .hotel
   width: 100%
-  margin-top: 200px
   padding-bottom: 67px
   background: $color-background-light
   color: $color-text-dark
@@ -12,6 +11,7 @@
       list-style: none
       padding-left: 0
       margin-top: 0
+      margin-bottom: 23px
       padding: 18px 0 19px 0
     &-item
       font-size: 10px
@@ -36,10 +36,13 @@
     flex-wrap: wrap
     align-items: center
   &__stars
+    display: flex
     flex-basis: 100%
+    margin-bottom: 5px
   &__star 
     width: 8px
     height: 8px
+    margin-right: 2px
   &__name
     font-weight: 700
     font-size: 24px
@@ -73,11 +76,8 @@
     &-arrow-right
       transform: rotate(180deg)
   &__rating
-    width: 65px
-    height: 45px
+    padding: 2px 7px 6px 7px
     border-radius: 4px
-    padding-top: 9px
-    padding-bottom: 9px
     background: $color-button
     color: $color-text-white
     display: flex
