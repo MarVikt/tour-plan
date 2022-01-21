@@ -378,10 +378,7 @@ button:hover {
 }
 
 .header {
-  position: absolute;
   width: 100%;
-  left: 0px;
-  top: 0px;
 }
 
 .header__content {
@@ -395,16 +392,11 @@ button:hover {
 }
 
 .top {
-  height: 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.horizontal-logo {
-  padding-top: 51px;
-  padding-bottom: 46px;
-  margin-right: 108px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .horizontal-logo-img {
@@ -414,7 +406,6 @@ button:hover {
 
 .search-bar {
   position: relative;
-  margin-right: 368px;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -436,6 +427,10 @@ button:hover {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.user {
+  margin-left: 260px;
 }
 
 .user-profile {
@@ -552,7 +547,6 @@ button:hover {
 
 .hotel {
   width: 100%;
-  margin-top: 200px;
   padding-bottom: 67px;
   background: #f5fafe;
   color: #333333;
@@ -1097,7 +1091,7 @@ button:hover {
   .search-bar__find-bar {
     width: 450px;
   }
-  .hotel__photo {
+  .swiper {
     width: 1300px;
     height: 450px;
   }
@@ -1113,14 +1107,14 @@ button:hover {
   }
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1760px) {
   .boundaries {
     max-width: 1360px;
   }
   .top {
     width: 1360px;
   }
-  .hotel__photo {
+  .swiper {
     width: 980px;
     height: 450px;
   }
@@ -1130,14 +1124,14 @@ button:hover {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1460px) {
   .boundaries {
     max-width: 1110px;
   }
   .search-bar__find-bar {
     width: 350px;
   }
-  .hotel__photo {
+  .swiper {
     width: 728px;
     height: 450px;
   }
@@ -1157,8 +1151,8 @@ button:hover {
   .boundaries {
     max-width: 960px;
   }
-  .search-bar {
-    margin-right: 218px;
+  .user {
+    margin-left: 0;
   }
   .hotel__visualization {
     -ms-flex-wrap: wrap;
@@ -1192,7 +1186,7 @@ button:hover {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1060px) {
   .boundaries {
     max-width: 762px;
   }
@@ -1236,12 +1230,13 @@ button:hover {
   }
 }
 
-@media (max-width: 848px) {
+@media (max-width: 860px) {
   .boundaries {
     max-width: 700px;
   }
   .top {
-    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .horizontal-logo-img {
     width: 133px;
@@ -1262,9 +1257,6 @@ button:hover {
   }
   .nav__item {
     font-size: 12px;
-  }
-  .breadcrumb {
-    margin-top: 160px;
   }
   .hotel {
     padding-bottom: 35px;
@@ -1339,6 +1331,90 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .boundaries {
+    max-width: 560px;
+  }
+  .search-bar__find-bar {
+    width: 200px;
+  }
+  .user {
+    margin-left: 26px;
+  }
+  .nav {
+    padding: 23px 0 23px 0;
+  }
+  .nav__item {
+    font-size: 11px;
+  }
+  .hotel__breadcrumb-list {
+    margin-bottom: 0;
+  }
+  .hotel__rating {
+    display: none;
+  }
+  .hotel__photos {
+    margin-bottom: 15px;
+  }
+  .hotel__booking {
+    width: 230px;
+    min-height: 213px;
+  }
+  .hotel__booking-call-centre {
+    font-size: 16px;
+  }
+  .hotel__map-point {
+    width: 300px;
+  }
+  .swiper {
+    width: 560px;
+  }
+  .newsletter__title {
+    font-size: 32px;
+  }
+  .newsletter__text {
+    width: 315px;
+  }
+  .about-us__feedback {
+    width: 600px;
+  }
+  .about-us__title {
+    font-size: 30px;
+    margin-bottom: 97px;
+  }
+  .about-us__user {
+    width: 550px;
+    height: 300px;
+    padding: 55px 60px 19px 65px;
+  }
+  .about-us__user-avatar {
+    left: 42%;
+  }
+  .about-us__previous-feedback {
+    padding-top: 118px;
+  }
+  .about-us__next-feedback {
+    padding-top: 118px;
+  }
+  .about-us__message {
+    max-height: 133px;
+  }
+  .other {
+    padding-top: 29px;
+  }
+  .other__activities {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .other__active {
+    margin-bottom: 16px;
+  }
+  .other__offer {
+    width: 200px;
+  }
+}
+
 @media (max-width: 640px) {
   .boundaries {
     max-width: 480px;
@@ -1357,18 +1433,8 @@ button:hover {
   .nav {
     display: none;
   }
-  .top {
-    height: 80px;
-  }
-  .breadcrumb {
-    margin-top: 80px;
-  }
   .hotel__rating {
     display: none;
-  }
-  .hotel__photo {
-    width: 480px;
-    height: 309px;
   }
   .hotel__info {
     width: 480px;
@@ -1383,6 +1449,10 @@ button:hover {
   .hotel__map-point {
     width: 480px;
     height: 295px;
+  }
+  .swiper {
+    width: 480px;
+    height: 450px;
   }
   .newsletter {
     background-size: 145% auto;
@@ -1435,9 +1505,6 @@ button:hover {
   .boundaries {
     max-width: 320px;
   }
-  .hotel__rating {
-    display: none;
-  }
   .hotel__offer {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -1447,10 +1514,6 @@ button:hover {
   .hotel__stars {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
-  }
-  .hotel__photo {
-    width: 320px;
-    height: 206px;
   }
   .hotel__info {
     width: 320px;
@@ -1469,6 +1532,10 @@ button:hover {
   .hotel__map-point {
     width: 320px;
     height: 197px;
+  }
+  .swiper {
+    width: 320px;
+    height: 206px;
   }
   .newsletter__text {
     width: 280px;
@@ -1501,18 +1568,16 @@ button:hover {
     max-width: 279px;
   }
   .top {
-    height: 70px;
-  }
-  .horizontal-logo {
-    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .horizontal-logo-img {
     width: 99px;
     height: 14px;
   }
-  .breadcrumb {
-    margin-top: 70px;
-    padding-bottom: 8px;
+  .hotel__breadcrumb-list {
+    padding-top: 20px;
+    margin-bottom: 4px;
   }
   .hotel__description {
     -webkit-box-align: start;
@@ -1533,10 +1598,6 @@ button:hover {
   .hotel__photos {
     margin-bottom: 0;
   }
-  .hotel__photo {
-    width: 278px;
-    height: 179px;
-  }
   .hotel__booking {
     width: 278px;
     margin-bottom: 21px;
@@ -1544,6 +1605,10 @@ button:hover {
   .hotel__map-point {
     width: 278px;
     height: 172px;
+  }
+  .swiper {
+    width: 278px;
+    height: 179px;
   }
   .newsletter {
     height: 320px;
@@ -1553,7 +1618,7 @@ button:hover {
     padding-top: 79px;
   }
   .newsletter__text {
-    width: 280px;
+    width: 250px;
     padding-left: 19px;
   }
   .newsletter__title {
@@ -1566,10 +1631,10 @@ button:hover {
     margin-bottom: 87px;
   }
   .about-us__feedback {
-    width: 278px;
+    width: 250px;
   }
   .about-us__user {
-    width: 280px;
+    width: 230px;
     height: 355px;
     border-radius: 8px;
     padding: 55px 40px 19px 40px;

@@ -5,7 +5,7 @@
     width: 1680px
   .search-bar__find-bar
     width: 450px
-  .hotel__photo
+  .swiper
     width: 1300px
     height: 450px
   .newsletter__text
@@ -17,24 +17,24 @@
     &__offer
       width: 180px
 // --------------------------------------------------
-@media (max-width: 1680px)
+@media (max-width: 1760px)
   .boundaries
     max-width: 1360px
   .top
     width: 1360px
-  .hotel__photo
+  .swiper
     width: 980px
     height: 450px
   .other__img
       width: 315px
       height: 255px
 // --------------------------------------------------
-@media (max-width: 1400px)
+@media (max-width: 1460px)
   .boundaries
     max-width: 1110px
   .search-bar__find-bar
     width: 350px
-  .hotel__photo
+  .swiper
     width: 728px
     height: 450px
   .newsletter__text
@@ -49,8 +49,8 @@
 @media (max-width: 1280px)
   .boundaries
     max-width: 960px
-  .search-bar
-    margin-right: 218px
+  .user
+    margin-left: 0
   .hotel
     &__visualization
       flex-wrap: wrap
@@ -72,7 +72,7 @@
     &__offer
       top: 128px
 // --------------------------------------------------
-@media (max-width: 1024px)
+@media (max-width: 1060px)
   .boundaries
     max-width: 762px
   .top
@@ -102,11 +102,12 @@
     &__offer
       top: 143px
 // --------------------------------------------------
-@media (max-width: 848px)
+@media (max-width: 860px)
   .boundaries
     max-width: 700px
   .top
-    height: 100px
+    padding-top: 30px
+    padding-bottom: 30px
   .horizontal-logo-img
     width: 133px
     height: 18px
@@ -120,8 +121,6 @@
       justify-content: space-around
     &__item
       font-size: 12px
-  .breadcrumb
-    margin-top: 160px
   .hotel
     padding-bottom: 35px
     &__rating
@@ -172,6 +171,66 @@
       width: 200px
 
 // --------------------------------------------------
+@media (max-width: 767px)
+  .boundaries
+    max-width: 560px
+  .search-bar__find-bar
+    width: 200px
+  .user
+    margin-left: 26px
+  .nav
+    padding: 23px 0 23px 0
+    &__item
+      font-size: 11px
+  .hotel
+    &__breadcrumb-list
+      margin-bottom: 0
+    &__rating
+      display: none
+    &__photos
+      margin-bottom: 15px
+    &__booking
+      width: 230px
+      min-height: 213px
+      &-call-centre
+        font-size: 16px
+    &__map-point
+      width: 300px
+  .swiper
+    width: 560px
+  .newsletter
+    &__title
+      font-size: 32px
+    &__text
+      width: 315px
+  .about-us
+    &__feedback
+      width: 600px
+    &__title
+      font-size: 30px
+      margin-bottom: 97px
+    &__user
+      width: 550px
+      height: 300px
+      padding: 55px 60px 19px 65px
+      &-avatar
+        left: 42%
+    &__previous-feedback
+      padding-top: 118px
+    &__next-feedback
+      padding-top: 118px
+    &__message
+      max-height: 133px
+  .other
+    padding-top: 29px
+    &__activities
+      justify-content: space-between
+    &__active
+      margin-bottom: 16px
+    &__offer
+      width: 200px
+
+// --------------------------------------------------
 @media (max-width: 640px)
   .boundaries
     max-width: 480px
@@ -183,16 +242,9 @@
     display: flex
   .nav
     display: none
-  .top
-    height: 80px
-  .breadcrumb
-    margin-top: 80px
   .hotel
     &__rating
       display: none
-    &__photo
-      width: 480px
-      height: 309px
     &__info
       width: 480px
       flex-direction: column
@@ -201,6 +253,9 @@
     &__map-point
       width: 480px
       height: 295px
+  .swiper
+    width: 480px
+    height: 450px
   .newsletter
     background-size: 145% auto
     &__content
@@ -237,16 +292,11 @@
   .boundaries
     max-width: 320px
   .hotel
-    &__rating
-      display: none
     &__offer
       order: -1
       margin-right: 170px
     &__stars
       flex-basis: 20%
-    &__photo
-      width: 320px
-      height: 206px
     &__info
       width: 320px
     &__name
@@ -260,6 +310,9 @@
     &__map-point
       width: 320px
       height: 197px
+  .swiper
+    width: 320px
+    height: 206px
   .newsletter__text
     width: 280px
   .about-us
@@ -284,16 +337,15 @@
   .boundaries
     max-width: 279px
   .top
-    height: 70px
-  .horizontal-logo
-    padding: 0
-    &-img
-      width: 99px
-      height: 14px
-  .breadcrumb
-    margin-top: 70px
-    padding-bottom: 8px
+    padding-top: 25px
+    padding-bottom: 25px
+  .horizontal-logo-img
+    width: 99px
+    height: 14px
   .hotel
+    &__breadcrumb-list
+      padding-top: 20px
+      margin-bottom: 4px
     &__description
       align-items: flex-start
     &__bio
@@ -305,22 +357,22 @@
       flex-basis: 22%
     &__photos
       margin-bottom: 0
-    &__photo
-      width: 278px
-      height: 179px
     &__booking
       width: 278px
       margin-bottom: 21px
     &__map-point
       width: 278px
       height: 172px
+  .swiper
+    width: 278px
+    height: 179px
   .newsletter
     height: 320px
     background-position-y: 80%
     &__content
       padding-top: 79px
     &__text
-      width: 280px
+      width: 250px
       padding-left: 19px
     &__title
       margin-bottom: 37px
@@ -331,9 +383,9 @@
       width: 245px
       margin-bottom: 87px
     &__feedback
-      width: 278px
+      width: 250px
     &__user
-      width: 280px
+      width: 230px
       height: 355px
       border-radius: 8px
       padding: 55px 40px 19px 40px
