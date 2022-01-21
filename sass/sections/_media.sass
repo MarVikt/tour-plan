@@ -176,18 +176,24 @@
 @media (max-width: 767px)
   .boundaries
     max-width: 560px
-  .top
-    height: 80px
   .search-bar__find-bar
-    width: 200px
+    width: 300px
   .user
     margin-left: 26px
+    &-profile
+      flex-direction: column
+      &__avatar
+        width: 35px
+        height: 35px
+        margin-right: 0
+        margin-bottom: 5px
   .nav
     padding: 23px 0 23px 0
+    &__menu
+      justify-content: space-between
     &__item
       font-size: 11px
   .hotel
-    margin-top: 139px
     &__breadcrumb-list
       margin-bottom: 0
     &__rating
