@@ -1170,7 +1170,7 @@ button:hover {
         flex-wrap: wrap;
   }
   .hotel__info {
-    width: 728px;
+    width: 960px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1182,8 +1182,15 @@ button:hover {
     margin-bottom: 30px;
   }
   .hotel__booking {
-    width: 347px;
+    width: 463px;
     padding: 30px 30px 28px 23px;
+  }
+  .hotel__map-point {
+    width: 463px;
+  }
+  .swiper {
+    width: 960px;
+    height: 450px;
   }
   .about-us__feedback {
     width: 960px;
@@ -1215,6 +1222,19 @@ button:hover {
   }
   .search-bar__find-bar {
     width: 320px;
+  }
+  .swiper {
+    width: 762px;
+    height: 450px;
+  }
+  .hotel__info {
+    width: 762px;
+  }
+  .hotel__booking {
+    width: 364px;
+  }
+  .hotel__map-point {
+    width: 364px;
   }
   .about-us__feedback {
     width: 762px;
@@ -1275,6 +1295,9 @@ button:hover {
   .hotel__rating {
     width: 80px;
     height: 45px;
+  }
+  .hotel__photos {
+    margin-bottom: 20px;
   }
   .hotel__booking {
     width: 340px;
@@ -1624,11 +1647,21 @@ button:hover {
     padding-bottom: 8px;
   }
   .hotel__photos {
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
   .hotel__booking {
     width: 278px;
+    min-height: 210px;
     margin-bottom: 21px;
+  }
+  .hotel__booking-call-centre {
+    font-size: 18px;
+  }
+  .hotel__booking-call-img {
+    margin-right: 5px;
+  }
+  .hotel__booking-button {
+    font-size: 14px;
   }
   .hotel__map-point {
     width: 278px;
