@@ -890,12 +890,12 @@ button:hover {
 }
 
 .newsletter__button {
-  width: 65px;
+  min-width: 65px;
   height: 55px;
   position: absolute;
   right: 0;
   top: 0;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 12px;
 }
 
