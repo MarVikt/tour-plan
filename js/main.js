@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const hotelSlider = new Swiper('.hotel__photos', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
