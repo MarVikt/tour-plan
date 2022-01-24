@@ -937,6 +937,7 @@ button:hover {
 }
 
 .about-us__user {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -948,6 +949,9 @@ button:hover {
   width: 731px;
   height: 280px;
   padding: 55px 97px 20px 97px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 
@@ -965,8 +969,10 @@ button:hover {
      object-fit: cover;
   border-radius: 50%;
   position: absolute;
-  left: 44%;
-  top: -45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
 }
 
 .about-us__date {

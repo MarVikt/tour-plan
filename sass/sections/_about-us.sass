@@ -19,12 +19,15 @@
     display: flex
     justify-content: space-between
   &__user
+    margin: auto
     display: flex
     flex-direction: column
     background: $color-background-white
     width: 731px
     height: 280px
     padding: 55px 97px 20px 97px
+    border-radius: 8px
+    object-fit: cover
     position: relative
     &-name
       font-weight: 700
@@ -37,8 +40,9 @@
       object-fit: cover
       border-radius: 50%
       position: absolute
-      left: 44%
-      top: -45px
+      left: 50%
+      transform: translateX(-50%)
+      top: 0
   &__date
     font-size: 10px
     color: $color-text-black
