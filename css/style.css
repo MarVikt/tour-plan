@@ -903,7 +903,6 @@ button:hover {
   width: 100%;
   background: #f5fafe;
   color: #333333;
-  text-align: center;
 }
 
 .about-us__content {
@@ -914,7 +913,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 42px;
+  padding-top: 12px;
   padding-bottom: 70px;
 }
 
@@ -922,21 +921,17 @@ button:hover {
   font-weight: 700;
   font-size: 36px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 116px;
+  margin-bottom: 71px;
 }
 
 .about-us__feedback {
-  width: 1065px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 1072px;
+  position: relative;
 }
 
-.about-us__user {
+.about-us__item {
+  width: 731px;
+  height: 280px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -945,14 +940,30 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #ffffff;
-  width: 731px;
-  height: 280px;
-  padding: 55px 97px 20px 97px;
+  padding: 55px 96px 20px 99px;
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  margin-top: 45px;
+}
+
+.about-us__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -100px;
 }
 
 .about-us__user-name {
@@ -968,20 +979,27 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 0;
+  margin-bottom: 10px;
 }
 
 .about-us__date {
   font-size: 10px;
   color: #000000;
+  margin-bottom: 4px;
 }
 
 .about-us__rating {
-  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.about-us__star {
+  width: 8px;
+  height: 8px;
+  margin-right: 2px;
+  margin-bottom: 2px;
 }
 
 .about-us__message {
@@ -1014,16 +1032,22 @@ button:hover {
   opacity: 0.4;
 }
 
-.about-us__previous-feedback {
+.about-us__button {
+  width: 30px;
+  height: 30px;
   background: #f5fafe;
-  height: 18px;
-  padding-top: 95px;
+  position: absolute;
+  top: 46%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.about-us__next-feedback {
-  background: #f5fafe;
-  height: 18px;
-  padding-top: 95px;
+.about-us__button--previous {
+  left: 0;
+}
+
+.about-us__button--next {
+  right: 0;
 }
 
 .about-us__arrow-right {

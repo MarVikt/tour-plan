@@ -2,33 +2,37 @@
   width: 100%
   background: $color-background-light
   color: $color-text-dark
-  text-align: center
   &__content
     flex-direction: column
     align-items: center
-    padding-top: 42px
+    padding-top: 12px
     padding-bottom: 70px
   &__title
     font-weight: 700
     font-size: 36px
     text-transform: uppercase
-    margin: 0
-    margin-bottom: 116px
+    margin-bottom: 71px
   &__feedback
-    width: 1065px
-    display: flex
-    justify-content: space-between
-  &__user
+    width: 1072px
+    position: relative
+  &__item
+    width: 731px
+    height: 280px
     margin: auto
     display: flex
     flex-direction: column
+    align-items: center
     background: $color-background-white
-    width: 731px
-    height: 280px
-    padding: 55px 97px 20px 97px
+    padding: 55px 96px 20px 99px
     border-radius: 8px
     object-fit: cover
     position: relative
+    margin-top: 45px
+  &__user
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -100px
     &-name
       font-weight: 700
       font-size: 12px
@@ -39,15 +43,19 @@
       height: 90px
       object-fit: cover
       border-radius: 50%
-      position: absolute
-      left: 50%
-      transform: translateX(-50%)
-      top: 0
+      margin-bottom: 10px
   &__date
     font-size: 10px
     color: $color-text-black
+    margin-bottom: 4px
   &__rating
-    margin-bottom: 15px
+    display: flex
+    margin-bottom: 18px
+  &__star
+    width: 8px
+    height: 8px
+    margin-right: 2px
+    margin-bottom: 2px
   &__message
     font-size: 12px
     line-height: 160%
@@ -71,14 +79,17 @@
     right: 8.62%
     top: 43.04%
     opacity: 0.4
-  &__previous-feedback
+  &__button
+    width: 30px
+    height: 30px
     background: $color-background-light
-    height: 18px
-    padding-top: 95px
-  &__next-feedback
-    background: $color-background-light
-    height: 18px
-    padding-top: 95px
+    position: absolute
+    top: 46%
+    transform: translateY(-50%)
+    &--previous
+      left: 0
+    &--next
+      right: 0
   &__arrow-right
     transform: rotate(180deg)
 
