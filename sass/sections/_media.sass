@@ -5,7 +5,7 @@
     width: 1680px
   .search-bar__find-bar
     width: 450px
-  .hotel_photos
+  .hotel__photos
     width: 1300px
     height: 450px
   .newsletter__text
@@ -101,7 +101,7 @@
   .about-us
     &__feedback
       width: 762px
-    &__user
+    &__item
       width: 600px
   .other
     &__activities
@@ -142,11 +142,11 @@
       height: 45px
     &__photos
       width: 700px
-      margin-bottom: 28px
+      margin-bottom: 29px
     &__booking
       width: 340px
       min-height: 210px
-      padding: 30px 22px 23px 23px
+      padding: 32px 22px 23px 23px
       &-button
         font-size: 14px
     &__map-point
@@ -154,6 +154,8 @@
       min-height: 210px
   .newsletter
     background-size: 100% auto
+    &__to-our
+      margin-bottom: 3px
     &__content
       justify-content: space-between
       padding-top: 95px
@@ -162,21 +164,25 @@
     &__subscribe
       margin: 0
   .about-us
+    &__content
+      padding-top: 19px
     &__feedback
       width: 692px
     &__title
       font-size: 30px
-      margin-bottom: 97px
-    &__user
+      margin-bottom: 51px
+    &__item
       width: 580px
       height: 300px
       padding: 55px 60px 19px 65px
       &-avatar
         left: 42%
-    &__previous-feedback
-      padding-top: 118px
-    &__next-feedback
-      padding-top: 118px
+    &__button
+      top: 52%
+      &--previous
+        left: -12px
+      &--next
+        right: -14px
     &__message
       max-height: 133px
   .other
@@ -217,8 +223,10 @@
     &__photos
       width: 560px
       margin-bottom: 15px
+    &__info
+      width: 560px
     &__booking
-      width: 230px
+      width: 245px
       min-height: 213px
       &-call-centre
         font-size: 16px
@@ -231,20 +239,20 @@
       width: 315px
   .about-us
     &__feedback
-      width: 600px
+      width: 560px
     &__title
       font-size: 30px
-      margin-bottom: 97px
-    &__user
-      width: 550px
+    &__item
+      width: 520px
       height: 300px
       padding: 55px 60px 19px 65px
       &-avatar
         left: 42%
-    &__previous-feedback
-      padding-top: 118px
-    &__next-feedback
-      padding-top: 118px
+    &__button
+      &--previous
+        left: -20px
+      &--next
+        right: -20px
     &__message
       max-height: 133px
   .other
@@ -301,7 +309,7 @@
       font-size: 26px
     &__feedback
       width: 480px
-    &__user
+    &__item
       width: 380px
       height: 300px
       padding: 55px 40px 19px 40px
@@ -340,7 +348,7 @@
   .about-us
     &__feedback
       width: 320px
-    &__user
+    &__item
       width: 280px
       height: 355px
       padding: 55px 40px 19px 40px
@@ -382,10 +390,11 @@
     &__photos
       width: 278px
       height: 179px
-      margin-bottom: 12px
+      margin-bottom: 20px
     &__booking
       width: 278px
       min-height: 210px
+      padding-top: 30px
       margin-bottom: 21px
       &-call-centre
         font-size: 18px
@@ -414,7 +423,7 @@
       margin-bottom: 87px
     &__feedback
       width: 250px
-    &__user
+    &__item
       width: 230px
       height: 355px
       border-radius: 8px
