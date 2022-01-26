@@ -27,4 +27,9 @@ var aboutUsSlider = new Swiper('.about-us__feedback', {
     prevEl: '.about-us__button--previous',
   },
 
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  
 });
