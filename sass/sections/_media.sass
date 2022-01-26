@@ -185,6 +185,10 @@
         right: -14px
     &__message
       max-height: 133px
+    &__open
+      display: none
+    &__close
+      display: none
   .other
     padding-top: 29px
     &__activities
@@ -404,34 +408,45 @@
         font-size: 14px
     &__map-point
       width: 278px
-      height: 172px
+      height: 173px
+      min-height: 173px
   .newsletter
     height: 320px
+    background-size: 148% auto
     background-position-y: 80%
     &__content
       padding-top: 79px
     &__text
-      width: 250px
+      width: 280px
       padding-left: 19px
     &__title
       margin-bottom: 37px
   .about-us
+    &__content
+      padding-top: 26px
     &__title
       font-size: 18px
       line-height: 23px
       width: 245px
-      margin-bottom: 87px
+      margin-bottom: 42px
     &__feedback
-      width: 250px
+      width: 281px
     &__item
-      width: 230px
-      height: 355px
+      width: 281px
+      height: 438px
       border-radius: 8px
-      padding: 55px 40px 19px 40px
+      padding: 55px 31px 19px 31px
       &-avatar
         left: 30%
+    &__button
+      top: -173px
+      &--previous
+        left: 22px
+      &--next
+        right: 28px
     &__message
-      max-height: 190px
+      max-height: 266px
+      text-align: left
   .other
     &__img
       width: 278px
