@@ -377,22 +377,6 @@ button:hover {
           justify-content: space-between;
 }
 
-.swiper-button-prev:hover {
-  cursor: default;
-}
-
-.swiper-button-prev::after {
-  content: '';
-}
-
-.swiper-button-next:hover {
-  cursor: default;
-}
-
-.swiper-button-next::after {
-  content: '';
-}
-
 .parallax-window {
   min-height: 260px;
   background: transparent;
@@ -1060,22 +1044,33 @@ button:hover {
   opacity: 0.4;
 }
 
-.about-us__button {
-  width: 30px;
-  height: 30px;
-  background: transparent;
+.about-us__buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 20;
   position: absolute;
-  top: 24%;
+  top: 46%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
+.about-us__button {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+}
+
 .about-us__button--previous {
-  left: 8px;
+  margin-left: 17px;
 }
 
 .about-us__button--next {
-  right: 12px;
+  margin-right: 15px;
 }
 
 .about-us__arrow-right {
@@ -1407,14 +1402,14 @@ button:hover {
   .about-us__item-avatar {
     left: 42%;
   }
-  .about-us__button {
-    top: 52%;
+  .about-us__buttons {
+    top: 50%;
   }
   .about-us__button--previous {
-    left: -12px;
+    margin-left: -3px;
   }
   .about-us__button--next {
-    right: -14px;
+    margin-right: -3px;
   }
   .about-us__message {
     max-height: 133px;
@@ -1523,12 +1518,6 @@ button:hover {
   }
   .about-us__item-avatar {
     left: 42%;
-  }
-  .about-us__button--previous {
-    left: -20px;
-  }
-  .about-us__button--next {
-    right: -20px;
   }
   .about-us__message {
     max-height: 133px;
@@ -1794,14 +1783,14 @@ button:hover {
   .about-us__item-avatar {
     left: 30%;
   }
-  .about-us__button {
-    top: -173px;
+  .about-us__buttons {
+    top: 10%;
   }
   .about-us__button--previous {
-    left: 22px;
+    margin-left: 31px;
   }
   .about-us__button--next {
-    right: 28px;
+    margin-right: 39px;
   }
   .about-us__message {
     max-height: 266px;
