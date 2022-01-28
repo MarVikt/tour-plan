@@ -1186,7 +1186,7 @@ button:hover {
 
 @media (max-width: 1280px) {
   .boundaries {
-    max-width: 960px;
+    max-width: 90.48068%;
   }
   .user {
     margin-left: 0;
@@ -1196,7 +1196,7 @@ button:hover {
         flex-wrap: wrap;
   }
   .hotel__info {
-    width: 960px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1205,23 +1205,19 @@ button:hover {
             justify-content: space-between;
   }
   .hotel__photos {
-    width: 960px;
+    width: 100%;
     height: 450px;
     margin-bottom: 30px;
   }
   .hotel__booking {
-    width: 463px;
+    width: calc(50% - 15px);
     padding: 30px 30px 28px 23px;
   }
-  .hotel__map-point {
-    width: 463px;
+  .hotel__map {
+    width: calc(50% - 15px);
   }
   .about-us__feedback {
-    width: 960px;
-  }
-  .other__img {
-    width: 225px;
-    height: 225px;
+    width: 100%;
   }
   .other__offer {
     top: 128px;
@@ -1231,13 +1227,7 @@ button:hover {
 
 @media (max-width: 1060px) {
   .boundaries {
-    max-width: 762px;
-  }
-  .top {
-    width: 762px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    max-width: 88.50174%;
   }
   .horizontal-logo {
     margin: 0;
@@ -1247,22 +1237,6 @@ button:hover {
   }
   .search-bar__find-bar {
     width: 320px;
-  }
-  .hotel__info {
-    width: 762px;
-  }
-  .hotel__photos {
-    width: 762px;
-    height: 450px;
-  }
-  .hotel__booking {
-    width: 364px;
-  }
-  .hotel__map-point {
-    width: 364px;
-  }
-  .about-us__feedback {
-    width: 762px;
   }
   .about-us__item {
     width: 600px;
@@ -1274,12 +1248,8 @@ button:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .other__img {
-    width: 366px;
-    height: 255px;
-  }
   .other__active {
-    margin-right: 0;
+    width: calc(50% - 15px);
     margin-bottom: 30px;
   }
   .other__offer {
@@ -1289,7 +1259,7 @@ button:hover {
 
 @media (max-width: 860px) {
   .boundaries {
-    max-width: 700px;
+    max-width: 91.14583%;
   }
   .top {
     padding-top: 30px;
@@ -1318,28 +1288,22 @@ button:hover {
   .hotel {
     padding-bottom: 33px;
   }
-  .hotel__rating {
-    width: 80px;
-    height: 45px;
-  }
   .hotel__photos {
-    width: 700px;
     margin-bottom: 29px;
   }
   .hotel__booking {
-    width: 340px;
+    width: calc(50% - 12.5px);
     min-height: 210px;
     padding: 32px 22px 23px 23px;
   }
   .hotel__booking-button {
     font-size: 14px;
   }
-  .hotel__map-point {
-    width: 340px;
-    min-height: 210px;
+  .hotel__map {
+    width: calc(50% - 12.5px);
   }
-  .newsletter {
-    background-size: 100% auto;
+  .hotel__map-point {
+    min-height: 210px;
   }
   .newsletter__to-our {
     margin-bottom: 3px;
@@ -1395,20 +1359,12 @@ button:hover {
   .other {
     padding-top: 29px;
   }
-  .other__activities {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .other__active {
+    width: calc(50% - 12.5px);
     margin-bottom: 16px;
   }
   .other__offer {
     width: 200px;
-  }
-  .other__img {
-    width: 339px;
-    height: 255px;
   }
   .other__get {
     bottom: 25px;
@@ -1417,7 +1373,7 @@ button:hover {
 
 @media (max-width: 767px) {
   .boundaries {
-    max-width: 560px;
+    max-width: 87.36349%;
   }
   .search-bar__find-bar {
     width: 300px;
@@ -1455,11 +1411,7 @@ button:hover {
     display: none;
   }
   .hotel__photos {
-    width: 100%;
     margin-bottom: 20px;
-  }
-  .hotel__info {
-    width: 100%;
   }
   .hotel__booking {
     width: calc(50% - 10px);
@@ -1472,7 +1424,6 @@ button:hover {
     width: calc(50% - 10px);
   }
   .hotel__map-point {
-    width: 100%;
     min-height: 213px;
   }
   .newsletter__title {
@@ -1489,19 +1440,17 @@ button:hover {
   }
   .about-us__item {
     width: 520px;
-    height: 438px;
+    height: 300px;
     padding: 55px 60px 19px 65px;
   }
   .about-us__item-avatar {
     left: 42%;
   }
+  .about-us__message {
+    -webkit-line-clamp: 8;
+  }
   .other {
     padding-top: 29px;
-  }
-  .other__activities {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .other__active {
     width: calc(50% - 10px);
@@ -1509,10 +1458,6 @@ button:hover {
   }
   .other__offer {
     width: 180px;
-  }
-  .other__img {
-    width: 100%;
-    height: 255px;
   }
 }
 
@@ -1577,13 +1522,13 @@ button:hover {
     padding-bottom: 8px;
   }
   .hotel__photos {
-    width: 100%;
     height: 179px;
-    margin-bottom: 20px;
   }
   .hotel__info {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .hotel__booking {
     width: 100%;
@@ -1641,11 +1586,9 @@ button:hover {
     line-height: 23px;
     margin-bottom: 42px;
   }
-  .about-us__feedback {
-    width: 100%;
-  }
   .about-us__item {
     width: 100%;
+    height: 438px;
     border-radius: 8px;
     padding: 55px 31px 19px 33px;
   }

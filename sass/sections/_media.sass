@@ -26,78 +26,57 @@
 // --------------------------------------------------
 @media (max-width: 1280px)
   .boundaries
-    max-width: 960px
+    max-width: 90.48068%
   .user
     margin-left: 0
   .hotel
     &__visualization
       flex-wrap: wrap
     &__info
-      width: 960px
+      width: 100%
       display: flex
       justify-content: space-between
     &__photos
-      width: 960px
+      width: 100%
       height: 450px
       margin-bottom: 30px
     &__booking
-      width: 463px
+      width: calc(50% - 15px)
       padding: 30px 30px 28px 23px
-    &__map-point
-      width: 463px
+    &__map
+      width: calc(50% - 15px)
   .about-us__feedback
-    width: 960px
+    width: 100%
   .other
-    &__img
-      width: 225px
-      height: 225px
     &__offer
       top: 128px
       width: 180px
 // --------------------------------------------------
 @media (max-width: 1060px)
   .boundaries
-    max-width: 762px
-  .top
-    width: 762px
-    justify-content: space-between
+    max-width: 88.50174%
   .horizontal-logo
     margin: 0
   .search-bar
     margin: 0
     &__find-bar
       width: 320px
-  .hotel
-    &__info
-      width: 762px
-    &__photos
-      width: 762px
-      height: 450px
-    &__booking
-      width: 364px
-    &__map-point
-      width: 364px
   .about-us
-    &__feedback
-      width: 762px
     &__item
       width: 600px
   .other
     &__activities
       flex-wrap: wrap
       justify-content: space-between
-    &__img
-      width: 366px
-      height: 255px
     &__active
-      margin-right: 0
+      width: calc(50% - 15px)
       margin-bottom: 30px
     &__offer
       top: 143px
 // --------------------------------------------------
 @media (max-width: 860px)
   .boundaries
-    max-width: 700px
+    max-width: 91.14583%
   .top
     padding-top: 30px
     padding-bottom: 30px
@@ -116,23 +95,20 @@
       font-size: 12px
   .hotel
     padding-bottom: 33px
-    &__rating
-      width: 80px
-      height: 45px
     &__photos
-      width: 700px
       margin-bottom: 29px
     &__booking
-      width: 340px
+      width: calc(50% - 12.5px)
       min-height: 210px
       padding: 32px 22px 23px 23px
       &-button
         font-size: 14px
+    &__map
+      width: calc(50% - 12.5px)
     &__map-point
-      width: 340px
       min-height: 210px
   .newsletter
-    background-size: 100% auto
+    // background-size: 100% auto
     &__to-our
       margin-bottom: 3px
     &__content
@@ -171,22 +147,18 @@
       display: none
   .other
     padding-top: 29px
-    &__activities
-      justify-content: space-between
     &__active
+      width: calc(50% - 12.5px)
       margin-bottom: 16px
     &__offer
       width: 200px
-    &__img
-      width: 339px
-      height: 255px
     &__get
       bottom: 25px
 
 // --------------------------------------------------
 @media (max-width: 767px)
   .boundaries
-    max-width: 560px
+    max-width: 87.36349%
   .search-bar__find-bar
     width: 300px
   .user
@@ -210,10 +182,7 @@
     &__rating
       display: none
     &__photos
-      width: 100%
       margin-bottom: 20px
-    &__info
-      width: 100%
     &__booking
       width: calc(50% - 10px)
       min-height: 213px
@@ -222,7 +191,6 @@
     &__map
       width: calc(50% - 10px)
       &-point
-        width: 100%
         min-height: 213px
   .newsletter
     &__title
@@ -236,22 +204,19 @@
       font-size: 30px
     &__item
       width: 520px
-      height: 438px
+      height: 300px
       padding: 55px 60px 19px 65px
       &-avatar
         left: 42%
+    &__message
+      -webkit-line-clamp: 8  // максимальное количество строк
   .other
     padding-top: 29px
-    &__activities
-      justify-content: space-between
     &__active
       width: calc(50% - 10px)
       margin-bottom: 18px
     &__offer
       width: 180px
-    &__img
-      width: 100%
-      height: 255px
 
 // --------------------------------------------------
 @media (max-width: 640px)
@@ -292,11 +257,9 @@
       flex-basis: 22%
       padding-bottom: 8px
     &__photos
-      width: 100%
       height: 179px
-      margin-bottom: 20px
     &__info
-      flex-wrap: wrap
+      flex-direction: column
     &__booking
       width: 100%
       min-height: 210px
@@ -338,10 +301,9 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 42px
-    &__feedback
-      width: 100%
     &__item
       width: 100%
+      height: 438px
       border-radius: 8px
       padding: 55px 31px 19px 33px
       &-avatar
