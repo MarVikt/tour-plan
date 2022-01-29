@@ -649,7 +649,7 @@ button:hover {
   position: relative;
 }
 
-.hotel__photos:after {
+.hotel__photos::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1121,7 +1121,7 @@ button:hover {
   position: relative;
 }
 
-.other__active:after {
+.other__active::after {
   content: "";
   position: absolute;
   width: 100%;
