@@ -1114,7 +1114,22 @@ button:hover {
 }
 
 .other__active {
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
   position: relative;
+}
+
+.other__active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: 10;
 }
 
 .other__img {
@@ -1122,10 +1137,6 @@ button:hover {
   height: 255px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 6px;
-  background-blend-mode: multiply;
-  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
-  overflow: hidden;
 }
 
 .other__offer {
@@ -1134,6 +1145,7 @@ button:hover {
   line-height: 20px;
   color: #ffffff;
   position: absolute;
+  z-index: 20;
   left: 27px;
   top: 143px;
 }
@@ -1145,6 +1157,7 @@ button:hover {
   padding: 9px 21px;
   border-radius: 4px;
   position: absolute;
+  z-index: 20;
   left: 26px;
   bottom: 28px;
 }
@@ -1608,10 +1621,6 @@ button:hover {
     -webkit-line-clamp: 14;
     text-align: left;
   }
-  .other__img {
-    width: 100%;
-    height: 255px;
-  }
   .other__title {
     font-weight: 700;
     font-size: 18px;
@@ -1620,6 +1629,10 @@ button:hover {
   }
   .other__active {
     width: 100%;
+  }
+  .other__img {
+    width: 100%;
+    height: 255px;
   }
   .other__offer {
     width: 62.5%;
