@@ -16,8 +16,9 @@
     margin: 0
   &__wrapper
     display: grid
-    grid-template-rows: min-content min-content 90px 317px
-    grid-template-columns: 25.676% 25.676% 31.081% 17.567%
+    grid-template-rows: min-content min-content 90px min-content
+    grid-template-columns: 23.874% 23.874% 29.279% 17.568%
+    column-gap: 20px
   &__logo
     grid-row: 1 / 3
     align-self: center
@@ -101,13 +102,17 @@
       margin: 0
       margin-bottom: 25px
     &-free
-      margin-bottom: 30px
+      display: block
+      margin-bottom: 20px
     &-item
       display: flex
       justify-content: flex-start
     &-pin
-      min-width: 50px
-      padding-left: 10px
+      min-width: 44px
+      padding-left: 6px
+      padding-top: 4px
+      &--mail
+        padding-top: 0
     &-list
       padding-left: 0
       margin: 0

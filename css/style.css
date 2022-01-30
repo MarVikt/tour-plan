@@ -1185,11 +1185,13 @@ button:hover {
 .footer__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: min-content min-content 90px 317px;
-      grid-template-rows: -webkit-min-content -webkit-min-content 90px 317px;
-      grid-template-rows: min-content min-content 90px 317px;
-  -ms-grid-columns: 25.676% 25.676% 31.081% 17.567%;
-      grid-template-columns: 25.676% 25.676% 31.081% 17.567%;
+  -ms-grid-rows: min-content min-content 90px min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content 90px -webkit-min-content;
+      grid-template-rows: min-content min-content 90px min-content;
+  -ms-grid-columns: 23.874% 23.874% 29.279% 17.568%;
+      grid-template-columns: 23.874% 23.874% 29.279% 17.568%;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .footer__logo {
@@ -1340,7 +1342,8 @@ button:hover {
 }
 
 .footer__contact-free {
-  margin-bottom: 30px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer__contact-item {
@@ -1353,8 +1356,13 @@ button:hover {
 }
 
 .footer__contact-pin {
-  min-width: 50px;
-  padding-left: 10px;
+  min-width: 44px;
+  padding-left: 6px;
+  padding-top: 4px;
+}
+
+.footer__contact-pin--mail {
+  padding-top: 0;
 }
 
 .footer__contact-list {
