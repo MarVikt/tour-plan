@@ -51,3 +51,10 @@ document.addEventListener('scroll', event => {
       newsLetter.style.backgroundPositionY =
         `${(100 - (slowing + shift) * (reverse ? -1 : 1)) % 100 + (step * slowing * (reverse ? -1 : 1))}%`;
 });
+
+var menuButton = document.querySelector(".menu-mobile");
+  menuButton.addEventListener('click', function() {
+  console.log("клик по кнопке мобильного меню");
+  document.querySelector(".nav").classList.toggle('nav__mobile--visible');
+
+});

@@ -253,16 +253,58 @@
 
 // --------------------------------------------------
 @media (max-width: 640px)
+  body
+    padding-top: 68px
   .boundaries
     max-width: 88.125%
   .search-bar
-    display: none
+    margin-bottom: 16px
+    &_mobile_hidden
+      display: none
+    &__find-bar 
+      width: 243px 
   .user
-    display: none
+    &_mobile_hidden
+      display: none
+    &-profile
+      &__name
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-transform: none
+        color: $color-text-white
+        margin-bottom: 8px
+      &__avatar 
+        width: 40px 
+        height: 40px
+        margin-bottom: 9px
   .menu-mobile
     display: flex
   .nav
     display: none
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 68px
+    padding: 19px 0 23px 0
+    &__menu
+      flex-direction: column
+      align-items: center
+    &__mobile--visible
+      display: block
+    &__item
+      margin-bottom: 22px
+      &--mobile
+        display: block
+  .header
+    &_mobile_fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 100
   .top
     padding-top: 25px
     padding-bottom: 25px

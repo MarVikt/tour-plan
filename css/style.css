@@ -387,6 +387,7 @@ button:hover {
 
 .header {
   width: 100%;
+  background: #ffffff;
 }
 
 .header__content {
@@ -524,6 +525,10 @@ button:hover {
 
 .nav__item:hover {
   text-decoration: underline;
+}
+
+.nav__item--mobile {
+  display: none;
 }
 
 .nav__item-ref {
@@ -1835,14 +1840,37 @@ button:hover {
 }
 
 @media (max-width: 640px) {
+  body {
+    padding-top: 68px;
+  }
   .boundaries {
     max-width: 88.125%;
   }
   .search-bar {
+    margin-bottom: 16px;
+  }
+  .search-bar_mobile_hidden {
     display: none;
   }
-  .user {
+  .search-bar__find-bar {
+    width: 243px;
+  }
+  .user_mobile_hidden {
     display: none;
+  }
+  .user-profile__name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .user-profile__avatar {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 9px;
   }
   .menu-mobile {
     display: -webkit-box;
@@ -1851,6 +1879,37 @@ button:hover {
   }
   .nav {
     display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 68px;
+    padding: 19px 0 23px 0;
+  }
+  .nav__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__mobile--visible {
+    display: block;
+  }
+  .nav__item {
+    margin-bottom: 22px;
+  }
+  .nav__item--mobile {
+    display: block;
+  }
+  .header_mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
   }
   .top {
     padding-top: 25px;
