@@ -160,6 +160,7 @@
       bottom: 25px
   .footer
     padding-top: 33px
+    padding-bottom: 0
     &__wrapper
       grid-template-rows: repeat(4, min-content)
       grid-template-columns: 23.143% 37.143% 28.851%
@@ -193,7 +194,7 @@
     &__bottom
       margin-left: 0
       padding-top: 57px
-      padding-bottom: 33px
+      padding-bottom: 26px
       justify-content: space-between
       &-list
         margin-right: 0
@@ -265,7 +266,7 @@
       width: 180px
 
 // --------------------------------------------------
-@media (max-width: 570px)
+@media (max-width: 640px)
   body
     padding-top: 68px
   .boundaries
@@ -302,10 +303,10 @@
     bottom: 0
     top: 68px
     padding: 19px 0 23px 0
+    overflow-y: auto
     &__menu
       flex-direction: column
       align-items: center
-      overflow-y: auto
     &__mobile--visible
       display: block
     &__item
@@ -484,6 +485,7 @@
     &__bottom
       flex-wrap: wrap
       padding-top: 32px
+      padding-bottom: 14px
       &-list
         flex-basis: 100%
         margin-bottom: 10px

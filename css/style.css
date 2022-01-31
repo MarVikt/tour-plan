@@ -1742,6 +1742,7 @@ button:hover {
   }
   .footer {
     padding-top: 33px;
+    padding-bottom: 0;
   }
   .footer__wrapper {
     -ms-grid-rows: (min-content)[4];
@@ -1810,7 +1811,7 @@ button:hover {
   .footer__bottom {
     margin-left: 0;
     padding-top: 57px;
-    padding-bottom: 33px;
+    padding-bottom: 26px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1919,7 +1920,7 @@ button:hover {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 640px) {
   body {
     padding-top: 68px;
   }
@@ -1965,6 +1966,7 @@ button:hover {
     bottom: 0;
     top: 68px;
     padding: 19px 0 23px 0;
+    overflow-y: auto;
   }
   .nav__menu {
     -webkit-box-orient: vertical;
@@ -1974,7 +1976,6 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow-y: auto;
   }
   .nav__mobile--visible {
     display: block;
@@ -2261,6 +2262,7 @@ button:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 32px;
+    padding-bottom: 14px;
   }
   .footer__bottom-list {
     -ms-flex-preferred-size: 100%;
