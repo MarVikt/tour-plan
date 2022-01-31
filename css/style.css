@@ -1471,7 +1471,6 @@ button:hover {
 }
 
 .footer__bottom {
-  width: 62.7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,9 +1483,9 @@ button:hover {
 }
 
 .footer__bottom-list {
-  width: 40.661%;
   padding-left: 0;
   margin: 0;
+  margin-right: 265px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1509,6 +1508,7 @@ button:hover {
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
+  margin-right: 13px;
 }
 
 .footer__bottom-pay {
@@ -1621,6 +1621,9 @@ button:hover {
   }
   .other__offer {
     top: 143px;
+  }
+  .footer__bottom-list {
+    margin-right: 240px;
   }
 }
 
@@ -1804,6 +1807,17 @@ button:hover {
   .footer__send-form {
     max-width: 77%;
   }
+  .footer__bottom {
+    margin-left: 0;
+    padding-top: 57px;
+    padding-bottom: 33px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__bottom-list {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1811,7 +1825,7 @@ button:hover {
     max-width: 87.36349%;
   }
   .search-bar__find-bar {
-    width: 300px;
+    width: 250px;
   }
   .user {
     margin-left: 26px;
@@ -1837,7 +1851,7 @@ button:hover {
             justify-content: space-between;
   }
   .nav__item {
-    font-size: 11px;
+    font-size: 10px;
   }
   .hotel__breadcrumb-list {
     margin-bottom: 0;
@@ -1896,7 +1910,7 @@ button:hover {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 570px) {
   body {
     padding-top: 68px;
   }
@@ -1956,6 +1970,7 @@ button:hover {
     display: block;
   }
   .nav__item {
+    font-size: 12px;
     margin-bottom: 22px;
   }
   .nav__item--mobile {
@@ -2231,6 +2246,19 @@ button:hover {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .footer__bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 32px;
+  }
+  .footer__bottom-list {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .footer__bottom-item {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
