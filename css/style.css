@@ -1965,6 +1965,7 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow-y: auto;
   }
   .nav__mobile--visible {
     display: block;
