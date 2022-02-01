@@ -1394,6 +1394,14 @@ button:hover {
   list-style-type: none;
 }
 
+.footer__contact-phone-number {
+  color: #BDBDBD;
+}
+
+.footer__contact-mail-ref {
+  color: #BDBDBD;
+}
+
 .footer__send {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
