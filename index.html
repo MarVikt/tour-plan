@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best tour plan - Hotel booking</title>
 
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
@@ -453,10 +456,10 @@
 
         <div class="footer__send">
           <h3 class="footer__send-title">Send us a message</h3>
-          <form action="#" class="footer__send-form">
-            <input type="text" class="footer__send-name" name="send-name" placeholder="Your Full Name*">
-            <input type="text" class="footer__send-phone" name="send-phone" placeholder="Phone Number*">
-            <textarea name="send-message" class="footer__send-message" cols="30" rows="6" placeholder="Message"></textarea>
+          <form action="send.php" class="footer__send-form" method="post">
+            <input type="text" class="footer__send-name" name="send_name" placeholder="Your Full Name*">
+            <input type="text" class="footer__send-phone" name="send_phone" placeholder="Phone Number*">
+            <textarea name="send_message" class="footer__send-message" cols="30" rows="6" placeholder="Message"></textarea>
             <button class="footer__send-button">Send</button>
             <span class="footer__send-required">* Required Fields</span>
           </form>
