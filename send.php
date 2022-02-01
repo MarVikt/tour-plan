@@ -8,15 +8,26 @@ require 'phpmailer/Exception.php';
 $send_name = $_POST['send_name'];
 $send_phone = $_POST['send_phone'];
 $send_message = $_POST['send_message'];
+$newsletter_mail = $_POST['newsletter_mail'];
 
 // Формирование самого письма
 $title = "Обращение с Best tour plan";
-$body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $send_name<br>
-<b>Телефон:</b> $send_phone<br><br>
-<b>Сообщение:</b><br>$send_message
-";
+// в зависимости от пришедшей формы формируем сообщение:
+if(isset($_POST['newsletter_mail'])){
+  // если есть что-то в $_POST['newsletter_mail']
+  $body = "
+  <h2>Подписка на новости</h2>
+  <b>Прошу присылать новости на:</b> $newsletter_mail<br>
+  ";
+} else {
+  // если нет, отправлена форма с телефоном и пр.
+  $body = "
+  <h2>Новое обращение</h2>
+  <b>Имя:</b> $send_name<br>
+  <b>Телефон:</b> $send_phone<br><br>
+  <b>Сообщение:</b><br>$send_message
+  ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -24,7 +35,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
