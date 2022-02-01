@@ -1185,7 +1185,6 @@ button:hover {
   font-weight: 400;
   line-height: 160%;
   padding-top: 108px;
-  padding-bottom: 100px;
 }
 
 .footer__content {
@@ -1402,6 +1401,7 @@ button:hover {
 
 .footer__contact-phone-number {
   color: #BDBDBD;
+  white-space: nowrap;
 }
 
 .footer__contact-mail-ref {
@@ -1493,7 +1493,7 @@ button:hover {
           justify-content: space-between;
   margin-left: auto;
   padding-top: 95px;
-  padding-bottom: 46px;
+  padding-bottom: 40px;
 }
 
 .footer__bottom-list {
@@ -1759,7 +1759,6 @@ button:hover {
   }
   .footer {
     padding-top: 33px;
-    padding-bottom: 0;
   }
   .footer__wrapper {
     -ms-grid-rows: (min-content)[4];
