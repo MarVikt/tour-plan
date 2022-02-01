@@ -861,7 +861,13 @@ button:hover {
 .newsletter {
   width: 100%;
   height: 260px;
+  background-blend-mode: multiply;
+  background-image: url(../img/newsletter.jpg);
   background-color: rgba(10, 34, 61, 0.8);
+  background-size: 107% auto;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
 }
 
 .newsletter__content {
@@ -1683,6 +1689,9 @@ button:hover {
   .hotel__map-point {
     min-height: 210px;
   }
+  .newsletter {
+    background-size: 100% auto;
+  }
   .newsletter__to-our {
     margin-bottom: 3px;
   }
@@ -2077,6 +2086,7 @@ button:hover {
   }
   .newsletter {
     height: 320px;
+    background-size: 148% auto;
   }
   .newsletter__content {
     padding-top: 79px;
