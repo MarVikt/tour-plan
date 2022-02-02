@@ -5,35 +5,49 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$send_name = '';
-$send_phone = '';
-$send_message = '';
-$newsletterMail = '';
+// $send_name = '';
+// $send_phone = '';
+// $send_message = '';
+// $newsletterMail = '';
 
 $send_name = $_POST['send_name'];
 $send_phone = $_POST['send_phone'];
 $send_message = $_POST['send_message'];
 $newsletterMail = $_POST['newsletterMail'];
+$modal_send_name = $_POST['modal_send_name'];
+$modal_send_phone = $_POST['modal_send_phone'];
+$modal_send_mail = $_POST['modal_send_mail'];
+$modal_send_message = $_POST['modal_send_message'];
 
+echo $modal_send_message;
 // Формирование самого письма
 $title = "Обращение с Best tour plan";
 
 // в зависимости от пришедшей формы формируем сообщение:
-if(isset($_POST['newsletterMail'])){
+if(isset($_POST['newsletterMail'])) {
   // если есть что-то в $_POST['newsletterMail']
   $body = "
   <h2>Подписка на новости</h2>
   <b>Прошу присылать новости на:</b> $newsletterMail<br>
   ";
-} else {
-  // если нет, отправлена форма с телефоном и пр.
-  $body = "
-  <h2>Новое обращение</h2>
-  <b>Имя:</b> $send_name<br>
-  <b>Телефон:</b> $send_phone<br><br>
-  <b>Сообщение:</b><br>$send_message
-  ";
-}
+  } elseif(isset($_POST['modal_send_message'])) {
+    // если есть что-то в $_POST['modal_send_message']
+    $body = "
+    <h2>Бронирование</h2>
+    <b>Имя:</b> $modal_send_name<br>
+    <b>Телефон:</b> $modal_send_phone<br>
+    <b>E-mail:</b> $modal_send_mail<br><br>
+    <b>Сообщение:</b><br>$modal_send_message
+    ";
+    } else {
+      // если нет, отправлена форма с футера
+      $body = "
+      <h2>Новое обращение</h2>
+      <b>Имя:</b> $send_name<br>
+      <b>Телефон:</b> $send_phone<br><br>
+      <b>Сообщение:</b><br>$send_message
+      ";
+      }
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
