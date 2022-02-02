@@ -109,7 +109,7 @@ $(".modal__send-form").validate({
       required: "Please specify your name",
       minlength: "The name must contain at least 2 characters"
     },
-    modal_send_phone: "Please specify your phone",
+    modal_send_phone: "Please specify your phone +_(___)___-__-__",
     modal_send_mail: {
       required: "We need your email address to contact you",
       email: "Your email address must be in the format of name@domain.com"
@@ -124,12 +124,18 @@ $(".footer__send-form").validate({
         required: "Please specify your name",
         minlength: "The name must contain at least 2 characters"
       },
-      send_phone: "Please specify your phone",
+      send_phone: "Please specify your phone +_(___)___-__-__",
     }
   });
 
-
-
+// номер телефона по маске
+$('.footer__send-phone').mask('+0(000)000-00-00', {
+  'translation': {0: {pattern: /[0-9]/}}
+});
+// $('.footer__send-phone').mask('+0(000)000-00-00', {
+//   'translation': {0: {pattern: /[0-9*]/}},
+//   placeholder: "+_(___)___-__-__"
+// });
 
 
 });
