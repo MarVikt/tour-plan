@@ -132,6 +132,9 @@ $(".footer__send-form").validate({
 $('.footer__send-phone').mask('+0(000)000-00-00', {
   'translation': {0: {pattern: /[0-9]/}}
 });
+$('.modal__send-phone').mask('+0(000)000-00-00', {
+  'translation': {0: {pattern: /[0-9]/}}
+});
 // $('.footer__send-phone').mask('+0(000)000-00-00', {
 //   'translation': {0: {pattern: /[0-9*]/}},
 //   placeholder: "+_(___)___-__-__"
