@@ -30,8 +30,8 @@ if(isset($_POST['newsletterMail'])) {
   <h2>Подписка на новости</h2>
   <b>Прошу присылать новости на:</b> $newsletterMail<br>
   ";
-  } elseif(isset($_POST['modal_send_message'])) {
-    // если есть что-то в $_POST['modal_send_message']
+  } elseif(isset($_POST['modal_send_mail'])) {
+    // если есть что-то в $_POST['modal_send_mail']
     $body = "
     <h2>Бронирование</h2>
     <b>Имя:</b> $modal_send_name<br>

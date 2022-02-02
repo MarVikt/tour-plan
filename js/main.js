@@ -89,7 +89,45 @@ $(document).ready(function() {
       modalOverlay.removeClass('modal__overlay_visible');
       modalDialog.removeClass('modal__dialog_visible');
        }
- });
+  });
+
+// валидация форм
+$(".newsletter__bar").validate({
+  errorClass: "invalid",
+  messages: {
+    newsletterMail: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    }
+  }
+});
+
+$(".modal__send-form").validate({
+  errorClass: "invalid",
+  messages: {
+    modal_send_name: {
+      required: "Please specify your name",
+      minlength: "The name must contain at least 2 characters"
+    },
+    modal_send_phone: "Please specify your phone",
+    modal_send_mail: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    }
+  }
+});
+
+$(".footer__send-form").validate({
+    errorClass: "invalid",
+    messages: {
+      send_name: {
+        required: "Please specify your name",
+        minlength: "The name must contain at least 2 characters"
+      },
+      send_phone: "Please specify your phone",
+    }
+  });
+
 
 
 

@@ -199,8 +199,10 @@
       </div>
 
       <form action="send.php" class="newsletter__bar" method="post">
-        <input type="text" class="newsletter__text" name="newsletterMail" placeholder="Your email address">
-        <button class="newsletter__button" data-choice="subscribe">Send</button>
+        <div class="newsletter__item">
+          <input type="email" class="newsletter__text" name="newsletterMail" placeholder="Your email address" required>
+          <button class="newsletter__button" data-choice="subscribe">Send</button>
+       </div>
       </form>
 
     </div>
@@ -465,8 +467,13 @@
         <div class="footer__send">
           <h3 class="footer__send-title">Send us a message</h3>
           <form action="send.php" class="footer__send-form" method="post">
-            <input type="text" class="footer__send-name" name="send_name" placeholder="Your Full Name*">
-            <input type="text" class="footer__send-phone" name="send_phone" placeholder="Phone Number*">
+            <div class="footer__send-item">
+              <input type="text" class="footer__send-name" name="send_name" placeholder="Your Full Name*" minlength="2"
+                required>
+            </div>
+            <div class="footer__send-item">
+              <input type="tel" class="footer__send-phone" name="send_phone" placeholder="Phone Number*" required>
+            </div>
             <textarea class="footer__send-message" name="send_message" cols="30" rows="6"
               placeholder="Message"></textarea>
             <button class="footer__send-button" data-choice="message">Send</button>
@@ -494,14 +501,16 @@
   <div class="modal">
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
-      <a  class="modal__close"href="#"><img src="img/close.svg" alt="Close"></a>
+      <a class="modal__close" href="#"><img src="img/close.svg" alt="Close"></a>
       <div class="modal__send">
         <h3 class="modal__send-title">Booking</h3>
         <form action="send.php" class="modal__send-form" method="post">
-          <input type="text" class="modal__send-name" name="modal_send_name" placeholder="Your Full Name*">
-          <input type="text" class="modal__send-phone" name="modal_send_phone" placeholder="Phone Number*">
-          <input type="text" class="modal__send-mail" name="modal_send_mail" placeholder="Email*">
-          <textarea  class="modal__send-message"name="modal_send_message" cols="30" rows="6" placeholder="Message"></textarea>
+          <input type="text" class="modal__send-name" name="modal_send_name" placeholder="Your Full Name*" minlength="2"
+            required>
+          <input type="tel" class="modal__send-phone" name="modal_send_phone" placeholder="Phone Number*" required>
+          <input type="email" class="modal__send-mail" name="modal_send_mail" placeholder="Email*" required>
+          <textarea class="modal__send-message" name="modal_send_message" cols="30" rows="6"
+            placeholder="Message"></textarea>
           <button class="modal__send-button" data-choice="booking">Send</button>
           <span class="modal__send-required">* Required Fields</span>
         </form>
@@ -512,6 +521,7 @@
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

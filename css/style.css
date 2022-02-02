@@ -380,6 +380,10 @@ button:hover {
           justify-content: space-between;
 }
 
+.invalid {
+  color: #ec1f46;
+}
+
 .header {
   width: 100%;
   background: #ffffff;
@@ -915,6 +919,16 @@ button:hover {
   font-size: 36px;
   text-transform: uppercase;
   margin: 0;
+}
+
+.newsletter__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .newsletter__bar {
@@ -1454,22 +1468,24 @@ button:hover {
       flex-wrap: wrap;
 }
 
-.footer__send-name {
+.footer__send-item {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
-  border-radius: 4px;
-  border: none;
-  padding: 18px 23px 17px 23px;
   margin-bottom: 16px;
 }
 
-.footer__send-phone {
-  -ms-flex-preferred-size: 47%;
-      flex-basis: 47%;
+.footer__send-name {
+  width: 100%;
   border-radius: 4px;
   border: none;
   padding: 18px 23px 17px 23px;
-  margin-bottom: 16px;
+}
+
+.footer__send-phone {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  padding: 18px 23px 17px 23px;
 }
 
 .footer__send-message {
@@ -1610,7 +1626,6 @@ button:hover {
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 16px;
 }
 
 .modal__send-form {
@@ -1630,7 +1645,7 @@ button:hover {
   border-radius: 4px;
   border: none;
   padding: 18px 23px 17px 23px;
-  margin-bottom: 17px;
+  margin-top: 17px;
 }
 
 .modal__send-phone {
@@ -1639,7 +1654,7 @@ button:hover {
   border-radius: 4px;
   border: none;
   padding: 18px 23px 17px 23px;
-  margin-bottom: 17px;
+  margin-top: 17px;
 }
 
 .modal__send-mail {
@@ -1648,7 +1663,7 @@ button:hover {
   border-radius: 4px;
   border: none;
   padding: 18px 23px 17px 23px;
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .modal__send-message {
@@ -1658,13 +1673,14 @@ button:hover {
   border: none;
   resize: none;
   padding: 18px 23px 17px 23px;
-  margin-bottom: 20px;
+  margin-top: 16px;
 }
 
 .modal__send-button {
   border-radius: 4px;
   border: none;
   padding: 18px 65px 17px 66px;
+  margin-top: 20px;
 }
 
 .modal__send-required {
@@ -1673,7 +1689,7 @@ button:hover {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
-  margin-top: 18px;
+  margin-top: 38px;
 }
 
 @media (max-width: 1960px) {
@@ -2387,11 +2403,7 @@ button:hover {
   .footer__send-title {
     margin-bottom: 14px;
   }
-  .footer__send-name {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .footer__send-phone {
+  .footer__send-item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
