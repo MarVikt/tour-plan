@@ -2411,6 +2411,10 @@ button:hover {
         -ms-flex-order: 2;
             order: 2;
   }
+  .modal__dialog {
+    padding: 33px 20px;
+    width: 400px;
+  }
 }
 
 @media (max-width: 549px) {
@@ -2510,6 +2514,10 @@ button:hover {
   }
   .footer__bottom-item {
     margin-right: 0;
+  }
+  .modal__dialog {
+    padding: 33px 20px;
+    width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
