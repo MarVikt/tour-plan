@@ -41,19 +41,19 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'mail.viktoriya-martynova.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'manager@viktoriya-martynova.ru'; // Логин на почте
-    $mail->Password   = 'hF6tP8aQ3cbA4i'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'v.m.podporogie@gmail.com'; // Логин на почте
+    $mail->Password   = 'kwqgpkvybzegkfij'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('manager@viktoriya-martynova.ru', 'Виктория'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('v.m.podporogie@gmail.com', 'Виктория'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('v.m.podporogie@gmail.com');  
+    $mail->addAddress('v.martynova@mail.ru');  
 
 // Отправка сообщения
 $mail->isHTML(true);
@@ -72,4 +72,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "status" => $status]);
+// echo json_encode(["result" => $result, "status" => $status]);
+header ('Location: thankyou.html');

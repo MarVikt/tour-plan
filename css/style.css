@@ -603,6 +603,13 @@ button:hover {
           align-items: center;
 }
 
+.hotel__thankyou {
+  width: 550px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hotel__stars {
   display: -webkit-box;
   display: -ms-flexbox;
