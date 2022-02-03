@@ -349,6 +349,7 @@ template {
 body {
   font-family: "Mulish", sans-serif;
   color: #ffffff;
+  overflow-y: auto;
 }
 
 a {
@@ -1587,6 +1588,8 @@ button:hover {
           transform: translate(-50%, -50%);
   padding: 33px 88px;
   width: 478px;
+  height: 80vh;
+  max-height: 544px;
   border-radius: 8px;
   background: #0a223d;
   color: #ffffff;
@@ -1595,6 +1598,7 @@ button:hover {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow-y: auto;
 }
 
 .modal__dialog_visible {
@@ -1647,6 +1651,7 @@ button:hover {
   border: none;
   padding: 18px 23px 17px 23px;
   margin-top: 17px;
+  overflow: hidden;
 }
 
 .modal__send-phone {
@@ -1656,6 +1661,7 @@ button:hover {
   border: none;
   padding: 18px 23px 17px 23px;
   margin-top: 17px;
+  overflow: hidden;
 }
 
 .modal__send-mail {
@@ -1665,6 +1671,7 @@ button:hover {
   border: none;
   padding: 18px 23px 17px 23px;
   margin-top: 16px;
+  overflow: hidden;
 }
 
 .modal__send-message {
@@ -2425,7 +2432,7 @@ button:hover {
             order: 2;
   }
   .modal__dialog {
-    padding: 33px 20px;
+    padding: 33px 60px;
     width: 400px;
   }
 }
@@ -2529,7 +2536,7 @@ button:hover {
     margin-right: 0;
   }
   .modal__dialog {
-    padding: 33px 20px;
+    padding: 33px 45px;
     width: 250px;
   }
 }
