@@ -1836,6 +1836,18 @@ button:active {
   }
 }
 
+@media (max-width: 992px) {
+  button:hover {
+    cursor: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  button:active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 @media (max-width: 860px) {
   .boundaries {
     max-width: 91.14583%;
