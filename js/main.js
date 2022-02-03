@@ -15,7 +15,7 @@ $(document).ready(function() {
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    // var modalBody = $('"body"');
+    // var modalBody = $("body");
     modalOverlay.addClass('modal__overlay_visible');
     modalDialog.addClass('modal__dialog_visible');
     // modalBody.addClass('body_hidden');
@@ -27,7 +27,7 @@ $(document).ready(function() {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    // var modalBody = $('"body"');
+    // var modalBody = $("body");
     modalOverlay.removeClass('modal__overlay_visible');
     modalDialog.removeClass('modal__dialog_visible');
     // modalBody.removeClass('body_hidden');
@@ -38,7 +38,7 @@ $(document).ready(function() {
     if (event.keyCode == 27) {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
-      // var modalBody = $('"body"');
+      // var modalBody = $("body");
       modalOverlay.removeClass('modal__overlay_visible');
       modalDialog.removeClass('modal__dialog_visible');
       // modalBody.removeClass('body_hidden');

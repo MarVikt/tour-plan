@@ -942,6 +942,7 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 350px;
 }
 
 .newsletter__bar {
@@ -958,6 +959,7 @@ button:hover {
   font-weight: 300;
   font-size: 14px;
   border: none;
+  overflow: hidden;
 }
 
 .newsletter__button {
@@ -2090,6 +2092,9 @@ button:hover {
   .newsletter__title {
     font-size: 32px;
   }
+  .newsletter__item {
+    width: 315px;
+  }
   .newsletter__text {
     width: 315px;
   }
@@ -2286,6 +2291,9 @@ button:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .newsletter__item {
+    width: 280px;
   }
   .newsletter__text {
     width: 280px;
