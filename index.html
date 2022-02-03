@@ -499,21 +499,22 @@
   <!-- /.footer -->
 
   <div class="modal">
-    <div class="modal__overlay"></div>
-    <div class="modal__dialog">
-      <a class="modal__close" href="#"><img src="img/close.svg" alt="Close"></a>
-      <div class="modal__send">
-        <h3 class="modal__send-title">Booking</h3>
-        <form action="send.php" class="modal__send-form" method="post">
-          <input type="text" class="modal__send-name" name="modal_send_name" placeholder="Your Full Name*" minlength="2"
-            required>
-          <input type="tel" class="modal__send-phone" name="modal_send_phone" placeholder="Phone Number*" minlength="16" required>
-          <input type="email" class="modal__send-mail" name="modal_send_mail" placeholder="Email*" required>
-          <textarea class="modal__send-message" name="modal_send_message" cols="30" rows="6"
-            placeholder="Message"></textarea>
-          <button class="modal__send-button" data-choice="booking">Send</button>
-          <span class="modal__send-required">* Required Fields</span>
-        </form>
+    <div class="modal__overlay">
+      <div class="modal__dialog">
+        <a class="modal__close" href="#"><img src="img/close.svg" alt="Close"></a>
+        <div class="modal__send">
+          <h3 class="modal__send-title">Booking</h3>
+          <form action="send.php" class="modal__send-form" method="post">
+            <input type="text" class="modal__send-name" name="modal_send_name" placeholder="Your Full Name*" minlength="2"
+              required>
+            <input type="tel" class="modal__send-phone" name="modal_send_phone" placeholder="Phone Number*" minlength="16" required>
+            <input type="email" class="modal__send-mail" name="modal_send_mail" placeholder="Email*" required>
+            <textarea class="modal__send-message" name="modal_send_message" cols="30" rows="6"
+              placeholder="Message"></textarea>
+            <button class="modal__send-button" data-choice="booking">Send</button>
+            <span class="modal__send-required">* Required Fields</span>
+          </form>
+        </div>
       </div>
     </div>
   </div>

@@ -1597,7 +1597,7 @@ button:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 33px 88px;
+  padding: 17px 17px;
   width: 478px;
   height: 80vh;
   max-height: 544px;
@@ -1618,9 +1618,12 @@ button:hover {
 }
 
 .modal__close {
-  position: absolute;
-  top: 17px;
-  right: 17px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-left: 426px;
   width: 16px;
   height: 16px;
   color: #ffffff;
@@ -1632,6 +1635,8 @@ button:hover {
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
+  margin-left: 71px;
+  margin-right: 71px;
 }
 
 .modal__send-title {
@@ -2115,6 +2120,10 @@ button:hover {
   .other__offer {
     width: 180px;
   }
+  .modal__send {
+    margin-left: 51px;
+    margin-right: 51px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -2443,8 +2452,14 @@ button:hover {
             order: 2;
   }
   .modal__dialog {
-    padding: 33px 60px;
     width: 400px;
+  }
+  .modal__close {
+    margin-left: 348px;
+  }
+  .modal__send {
+    margin-left: 33px;
+    margin-right: 33px;
   }
 }
 
@@ -2547,8 +2562,19 @@ button:hover {
     margin-right: 0;
   }
   .modal__dialog {
-    padding: 33px 45px;
     width: 250px;
+  }
+  .modal__close {
+    margin-left: 198px;
+  }
+  .modal__send-button {
+    padding: 18px 61px 17px 61px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .modal__send-required {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

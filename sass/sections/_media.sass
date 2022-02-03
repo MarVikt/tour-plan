@@ -264,6 +264,9 @@
       margin-bottom: 18px
     &__offer
       width: 180px
+  .modal__send
+    margin-left: 51px
+    margin-right: 51px
 
 // --------------------------------------------------
 @media (max-width: 640px)
@@ -471,9 +474,14 @@
         margin-bottom: 16px
       &-button
         order: 2
-  .modal__dialog
-    padding: 33px 60px  
-    width: 400px
+  .modal
+    &__dialog
+      width: 400px
+    &__close
+      margin-left: 348px
+    &__send
+      margin-left: 33px
+      margin-right: 33px
 
 // --------------------------------------------------
 @media (max-width: 549px)
@@ -526,5 +534,12 @@
         margin-right: 0
   .modal
     &__dialog
-      padding: 33px 45px
       width: 250px
+    &__close
+      margin-left: 198px
+    &__send
+      &-button
+        padding: 18px 61px 17px 61px
+        order: 2
+      &-required
+        margin-top: 10px
