@@ -383,7 +383,6 @@ button:hover {
 .invalid {
   color: #ec1f46;
   font-size: 12px;
-  max-width: 280px;
 }
 
 .header {
