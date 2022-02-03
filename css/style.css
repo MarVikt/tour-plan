@@ -622,6 +622,17 @@ button:hover {
   text-align: center;
 }
 
+.hotel__thankyou-back {
+  background: #0a223d;
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 8px;
+  padding: 18px 23px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .hotel__stars {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -95,9 +95,11 @@
       </ul>
 
       <div class="hotel__thankyou">
-        <h2 class="hotel__thankyou-item">Спасибо за&nbsp;обращение в&nbsp;нашу&nbsp;компанию!</h2>
-        <span class="hotel__thankyou-item">Наш менеджер свяжется&nbsp;с&nbsp;Вами в&nbsp;течении&nbsp;дня</span>
+        <h2 class="hotel__thankyou-item">Thank&nbsp;you for&nbsp;contacting our&nbsp;company!</h2>
+        <span class="hotel__thankyou-item">Our&nbsp;manager will&nbsp;contact&nbsp;you during&nbsp;the&nbsp;day</span>
       </div>
+
+      <a href="./" class="hotel__thankyou-back">Go back to the main page</a>
 
     </div>
   </section>
@@ -197,11 +199,16 @@
         <div class="footer__send">
           <h3 class="footer__send-title">Send us a message</h3>
           <form action="send.php" class="footer__send-form" method="post">
-            <input type="text" class="footer__send-name" name="send_name" placeholder="Your Full Name*">
-            <input type="text" class="footer__send-phone" name="send_phone" placeholder="Phone Number*">
-            <textarea name="send_message" class="footer__send-message" cols="30" rows="6"
+            <div class="footer__send-item">
+              <input type="text" class="footer__send-name" name="send_name" placeholder="Your Full Name*" minlength="2"
+                required>
+            </div>
+            <div class="footer__send-item">
+              <input type="tel" class="footer__send-phone" name="send_phone" placeholder="Phone Number*" minlength="16" required>
+            </div>
+            <textarea class="footer__send-message" name="send_message" cols="30" rows="6"
               placeholder="Message"></textarea>
-            <button class="footer__send-button">Send</button>
+            <button class="footer__send-button" data-choice="message">Send</button>
             <span class="footer__send-required">* Required Fields</span>
           </form>
         </div>
