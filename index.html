@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -338,37 +339,45 @@
 
   <section class="other">
     <div class="other__content boundaries">
-
+  
       <h2 class="other__title">Other Activities</h2>
-
+  
       <div class="other__activities">
-
-        <div class="other__active">
-          <img class="other__img" src="img/chamarel.jpg" alt="The curious corner of&nbsp;chamarel">
-          <span class="other__offer">The curious corner of&nbsp;chamarel</span>
-          <button data-toggle="modal-booking" class="other__get">Book Now</button>
+  
+        <div data-aos="fade-right" class="other__fade">
+          <div class="other__active">
+            <img class="other__img" src="img/chamarel.jpg" alt="The curious corner of&nbsp;chamarel">
+            <span class="other__offer">The curious corner of&nbsp;chamarel</span>
+            <button data-toggle="modal-booking" class="other__get">Book Now</button>
+          </div>
         </div>
-
-        <div class="other__active">
-          <img class="other__img" src="img/golf.jpg" alt="Gymkhana club golf course">
-          <span class="other__offer">Gymkhana club golf <br>course</span>
-          <button data-toggle="modal-booking" class="other__get">Book Now</button>
+  
+        <div data-aos="fade-right" class="other__fade" data-aos-delay="50">
+          <div class="other__active">
+            <img class="other__img" src="img/golf.jpg" alt="Gymkhana club golf course">
+            <span class="other__offer">Gymkhana club golf <br>course</span>
+            <button data-toggle="modal-booking" class="other__get">Book Now</button>
+          </div>
         </div>
-
-        <div class="other__active">
-          <img class="other__img" src="img/falls.jpg" alt="Tamarind falls hiking trip - full day">
-          <span class="other__offer">Tamarind falls hiking trip&nbsp;-&nbsp;full day</span>
-          <button data-toggle="modal-booking" class="other__get">Book Now</button>
+  
+        <div data-aos="fade-right" class="other__fade" data-aos-delay="150">
+          <div class="other__active">
+            <img class="other__img" src="img/falls.jpg" alt="Tamarind falls hiking trip - full day">
+            <span class="other__offer">Tamarind falls hiking trip&nbsp;-&nbsp;full day</span>
+            <button data-toggle="modal-booking" class="other__get">Book Now</button>
+          </div>
         </div>
-
-        <div class="other__active">
-          <img class="other__img" src="img/marine.jpg" alt="The blue marine discovery quest">
-          <span class="other__offer">The blue marine discovery quest</span>
-          <button data-toggle="modal-booking" class="other__get">Book Now</button>
+  
+        <div data-aos="fade-right" class="other__fade" data-aos-delay="250">
+          <div class="other__active">
+            <img class="other__img" src="img/marine.jpg" alt="The blue marine discovery quest">
+            <span class="other__offer">The blue marine discovery quest</span>
+            <button data-toggle="modal-booking" class="other__get">Book Now</button>
+          </div>
         </div>
-
+  
       </div>
-
+  
     </div>
   </section>
   <!-- /.other -->
@@ -378,7 +387,7 @@
       <div class="footer__wrapper">
 
         <div class="footer__logo">
-          <a href="./"><img class="footer__logo-item" src="img/vertical_logo.svg" alt="Logo: Best tour plan"></a>
+          <a href="#"><img class="footer__logo-item" src="img/vertical_logo.svg" alt="Logo: Best tour plan"></a>
         </div>
 
         <div class="footer__categories">
@@ -526,6 +535,10 @@
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/parallax.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/main.js"></script>
 
 </body>
