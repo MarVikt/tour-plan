@@ -77,17 +77,30 @@
     margin-right: 240px
 
 // --------------------------------------------------
-@media (max-width: 992px)
-  button
+@media (hover: hover) and (min-width: 992px)
+  a
     &:hover
-      cursor: auto
-      box-shadow: none
-    &:active
-      box-shadow: none
+      text-decoration: underline 
+  button
+  	&:hover
+  		cursor: pointer
+	  	box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(148, 5, 31, 0.5)
+	  &:active
+		  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(236, 31, 68, 0.5)
+  .nav
+    &-ref
+      color: $color-text-white 
   .hotel__photo-button
     &:hover
-      cursor: auto
+      box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(0, 122, 223, 0.5)
+    &:active
       box-shadow: none
+  .user
+    &:hover
+      animation: moveLeft 1s ease 0s 1 forwards
+  .footer__social-ref
+    &:hover
+      fill: $color-text-white
   
 // --------------------------------------------------
 @media (max-width: 860px)
