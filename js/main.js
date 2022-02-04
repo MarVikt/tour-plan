@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   var menuButton = document.querySelector(".menu-mobile");
     menuButton.addEventListener('click', function() {
-    console.log("клик по кнопке мобильного меню");
+    // console.log("клик по кнопке мобильного меню");
     document.querySelector(".nav").classList.toggle('nav__mobile--visible');
   
   });
@@ -10,7 +10,7 @@ $(document).ready(function() {
   var closeModalButton = $(".modal__close");
   var openModalButton = $('[data-toggle=modal-booking]');
   // var modalButton = document.querySelector("data-toggle");
-  console.log(openModalButton);
+  // console.log(openModalButton);
   openModalButton.on('click', openModal);
   function openModal() {
     var modalOverlay = $(".modal__overlay");
