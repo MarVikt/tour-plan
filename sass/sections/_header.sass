@@ -43,13 +43,15 @@
 		&__name 
 			font-size: 14px 
 			line-height: 18px 
-			color: $color-text-dark 
+			color: $color-text-dark
 		&__avatar 
 			width: 40px 
 			height: 40px 
 			object-fit: cover 
 			border-radius: 50% 
-			margin-right: 18px 
+			margin-right: 18px
+	&:hover
+		animation: moveLeft 1s ease 0s 1 forwards
 .menu-mobile
 	width: 16px
 	height: 11px
@@ -85,3 +87,8 @@
 			display: none
   &-ref
     color: $color-text-white 
+@keyframes moveLeft
+	0%
+		transform: translateX(0)
+	100%
+		transform: translateX(-10px)
